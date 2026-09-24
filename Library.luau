@@ -20,59 +20,73 @@ return k end end return end,__newindex=function(h,i,j)local k=d[i]if k then k(j)
 if not(f and table.find(f,i))then c[i]=j end elseif e then local l=pcall(
 function()e[i]=j end)if not l then c[i]=j end else c[i]=j end end})return g end
 return b end function a.c()local c=a.cache.c if not c then c={c=b()}a.cache.c=c
-end return c.c end end do local b=function()local b,c,d=a.b(),a.c(),{}function d
-.Value(e)local f={}return c.Wrap({Value=e,Connect=function(g,h)table.insert(f,h)
-return h end},{Value=function(g)for h,i in pairs(f)do pcall(i,g)end end})end
-function d.Create(e)return function(f)f=f or{}local g=Instance.new(e)for h,i in
-pairs(f)do if h=='__dynamicKeys'and type(i)=='table'then for j,k in pairs(i)do
-pcall(function()g[j]=k.Value end)k:Connect(function(l)task.defer(pcall,function(
-)if f.__contextKeys and f.__contextKeys._general then f.__contextKeys._general()
-end g[j]=f.__contextKeys and f.__contextKeys[j]and f.__contextKeys[j]()or l end)
-end)end continue end if typeof(i)=='table'and i.__unique then i.Parent=g end
-pcall(function()g[h]=i end)end return setmetatable({__unique=true},{__metatable=
-g,__index=function(h,i)if i=='__instance'then return g end local j=g[i]if
-typeof(j)=='function'then return function(k,...)return j(g,...)end else return j
-end end,__newindex=function(h,i,j)g[i]=j end})end end return d end function a.d(
-)local c=a.cache.d if not c then c={c=b()}a.cache.d=c end return c.c end end do
-local b=function()local b=a.a()local c=function(c)return b.Clone(game:
-GetService(c))end return{HttpService=(c'HttpService'),TweenService=(c
-'TweenService'),RunService=(c'RunService'),UserInputService=(c'UserInputService'
-),GuiService=(c'GuiService'),Workspace=(c'Workspace'),Players=(c'Players'),
-Lighting=(c'Lighting')}end function a.e()local c=a.cache.e if not c then c={c=b(
-)}a.cache.e=c end return c.c end end do local b=function()local b=a.e()local c,d
-=b.HttpService,{}d.__index=d local e,f,g,h,i={Accent=true,Structures=true,Tabs=
-true,Theme=true,__cascadeRecorder=true,__cascadeRecorderNode=true,__container=
-true,__window=true,addToHistory=true},{BindPressed=true,Closed=true,Pushed=true,
-TextChanged=true,ValueChanged=true},{App={'WindowPill','Theme','Accent'},Window=
-{'Title','Subtitle','Searching','Draggable','Resizable','CanExit','CanMinimize',
-'CanZoom','Maximized','Minimized','Dropshadow','UIBlur','Size','Position'},
-Section={'Title','Disclosure','Expanded','LayoutOrder','Visible'},Tab={'Title',
-'Icon','Indentation','Selected','LayoutOrder','Visible'},Page={'LayoutOrder',
-'Visible'},PageSection={'Title','Subtitle','LayoutOrder','Visible'},Form={
-'LayoutOrder','Visible'},Row={'SearchIndex','LayoutOrder','Visible'},HStack={
+end return c.c end end do local b=function()local b,c,d,e=game:GetService
+'HttpService','rbxassetid://12187365364','Zircon-LineSeedSansTH.font',{{Name=
+'Regular',Weight=400,Path='Zircon-LineSeedSansTH-Regular.ttf',Url=
+[[https://nissei.co.th/wp-content/uploads/2023/04/LINESeedSansTH_A_Rg.ttf]]},{
+Name='Bold',Weight=700,Path='Zircon-LineSeedSansTH-Bold.ttf',Url=
+[[https://nissei.co.th/wp-content/uploads/2023/04/LINESeedSansTH_A_Bd.ttf]]}}
+local f=function()local f=getcustomasset or getsynasset if not isfile or not
+writefile or not f then return c end local g,h=pcall(function()local g={}for h,i
+in next,e do if not isfile(i.Path)then writefile(i.Path,game:HttpGet(i.Url))end
+g[h]={name=i.Name,weight=i.Weight,style='normal',assetId=f(i.Path)}end
+writefile(d,b:JSONEncode{name='LINE Seed Sans TH',faces=g})return f(d)end)return
+g and h or c end return f()end function a.d()local c=a.cache.d if not c then c={
+c=b()}a.cache.d=c end return c.c end end do local b=function()local b,c,d,e=a.b(
+),a.c(),a.d(),{}function e.Value(f)local g={}return c.Wrap({Value=f,Connect=
+function(h,i)table.insert(g,i)return i end},{Value=function(h)for i,j in pairs(g
+)do pcall(j,h)end end})end function e.Create(f)return function(g)g=g or{}local h
+=Instance.new(f)for i,j in pairs(g)do if i=='__dynamicKeys'and type(j)=='table'
+then for k,l in pairs(j)do pcall(function()h[k]=l.Value end)l:Connect(function(m
+)task.defer(pcall,function()if g.__contextKeys and g.__contextKeys._general then
+g.__contextKeys._general()end h[k]=g.__contextKeys and g.__contextKeys[k]and g.
+__contextKeys[k]()or m end)end)end continue end if typeof(j)=='table'and j.
+__unique then j.Parent=h end pcall(function()h[i]=j end)end if h:IsA'TextLabel'
+or h:IsA'TextButton'or h:IsA'TextBox'then local i=h.FontFace h.FontFace=Font.
+new(d,i.Weight,i.Style)end return setmetatable({__unique=true},{__metatable=h,
+__index=function(i,j)if j=='__instance'then return h end local k=h[j]if typeof(k
+)=='function'then return function(l,...)return k(h,...)end else return k end end
+,__newindex=function(i,j,k)h[j]=k end})end end return e end function a.e()local
+c=a.cache.e if not c then c={c=b()}a.cache.e=c end return c.c end end do local b
+=function()local b=a.a()local c=function(c)return b.Clone(game:GetService(c))end
+return{HttpService=(c'HttpService'),TweenService=(c'TweenService'),RunService=(c
+'RunService'),UserInputService=(c'UserInputService'),GuiService=(c'GuiService'),
+Workspace=(c'Workspace'),Players=(c'Players'),Lighting=(c'Lighting')}end
+function a.f()local c=a.cache.f if not c then c={c=b()}a.cache.f=c end return c.
+c end end do local b=function()local b=a.f()local c,d=b.HttpService,{}d.__index=
+d local e,f,g,h,i={Accent=true,Structures=true,Tabs=true,Theme=true,
+__cascadeRecorder=true,__cascadeRecorderNode=true,__container=true,__window=true
+,addToHistory=true},{BindPressed=true,Closed=true,Pushed=true,TextChanged=true,
+ValueChanged=true},{App={'WindowPill','Theme','Accent'},Window={'Title',
+'Subtitle','Searching','Draggable','Resizable','CanExit','CanMinimize','CanZoom'
+,'Maximized','Minimized','Dropshadow','UIBlur','Size','Position'},Section={
+'Title','Disclosure','Expanded','LayoutOrder','Visible'},Tab={'Title','Icon',
+'Indentation','Selected','LayoutOrder','Visible'},Page={'LayoutOrder','Visible'}
+,PageSection={'Title','Subtitle','LayoutOrder','Visible'},Form={'LayoutOrder',
+'Visible'},Row={'SearchIndex','LayoutOrder','Visible'},HStack={'Padding',
+'HorizontalAlignment','VerticalAlignment','LayoutOrder','Visible'},VStack={
 'Padding','HorizontalAlignment','VerticalAlignment','LayoutOrder','Visible'},
-VStack={'Padding','HorizontalAlignment','VerticalAlignment','LayoutOrder',
-'Visible'},TitleStack={'Title','Subtitle','LayoutOrder','Visible'},Label={'Text'
-,'RichText','TextXAlignment','TextYAlignment','TextWrapped','LayoutOrder',
-'Visible','Size','Position'},Symbol={'Image','Style','LayoutOrder','Visible',
-'Size','Position'},ImageSurface={'Image','ImageColor','SurfaceColor','Gradient',
-'LayoutOrder','Visible'},Toggle={'Value','LayoutOrder','Visible'},TextField={
-'Placeholder','Value','LayoutOrder','Visible'},KeybindField={'Placeholder',
-'Value','LayoutOrder','Visible'},Slider={'Minimum','Maximum','Value',
-'LayoutOrder','Visible'},Button={'State','Label','LayoutOrder','Visible'},
-Stepper={'Minimum','Maximum','Step','Fielded','Value','LayoutOrder','Visible'},
-RadioButtonGroup={'Options','Value','LayoutOrder','Visible'},PopUpButton={
-'Options','Expanded','Anchor','Maximum','Value','LayoutOrder','Visible'},
-PullDownButton={'Options','Expanded','Anchor','Label','Value','LayoutOrder',
-'Visible'},Notification={'Title','Subtitle','App','AppIcon','Icon','Duration',
-'LayoutOrder','Visible'}},{'Visible','Active','AnchorPoint','Position','Size',
-'AutomaticSize','BackgroundColor3','BackgroundTransparency','BorderColor3',
-'BorderMode','BorderSizePixel','ClipsDescendants','LayoutOrder','Rotation',
-'Selectable','SelectionGroup','Text','RichText','TextColor3','TextTransparency',
-'TextSize','TextTruncate','TextWrapped','TextXAlignment','TextYAlignment',
-'FontFace','LineHeight','PlaceholderText','Image','ImageColor3',
-'ImageTransparency','ImageRectOffset','ImageRectSize','ScaleType','SliceCenter',
-'SliceScale','CanvasSize','AutomaticCanvasSize','ScrollBarImageColor3',
+TitleStack={'Title','Subtitle','LayoutOrder','Visible'},Label={'Text','RichText'
+,'TextXAlignment','TextYAlignment','TextWrapped','LayoutOrder','Visible','Size',
+'Position'},Symbol={'Image','Style','LayoutOrder','Visible','Size','Position'},
+ImageSurface={'Image','ImageColor','SurfaceColor','Gradient','LayoutOrder',
+'Visible'},Toggle={'Value','LayoutOrder','Visible'},TextField={'Placeholder',
+'Value','LayoutOrder','Visible'},KeybindField={'Placeholder','Value',
+'LayoutOrder','Visible'},Slider={'Minimum','Maximum','Value','LayoutOrder',
+'Visible'},Button={'State','Label','LayoutOrder','Visible'},Stepper={'Minimum',
+'Maximum','Step','Fielded','Value','LayoutOrder','Visible'},RadioButtonGroup={
+'Options','Value','LayoutOrder','Visible'},PopUpButton={'Options','Expanded',
+'Anchor','Maximum','Value','LayoutOrder','Visible'},PullDownButton={'Options',
+'Expanded','Anchor','Label','Value','LayoutOrder','Visible'},Notification={
+'Title','Subtitle','App','AppIcon','Icon','Duration','LayoutOrder','Visible'}},{
+'Visible','Active','AnchorPoint','Position','Size','AutomaticSize',
+'BackgroundColor3','BackgroundTransparency','BorderColor3','BorderMode',
+'BorderSizePixel','ClipsDescendants','LayoutOrder','Rotation','Selectable',
+'SelectionGroup','Text','RichText','TextColor3','TextTransparency','TextSize',
+'TextTruncate','TextWrapped','TextXAlignment','TextYAlignment','FontFace',
+'LineHeight','PlaceholderText','Image','ImageColor3','ImageTransparency',
+'ImageRectOffset','ImageRectSize','ScaleType','SliceCenter','SliceScale',
+'CanvasSize','AutomaticCanvasSize','ScrollBarImageColor3',
 'ScrollBarImageTransparency','ScrollBarThickness','Padding','PaddingBottom',
 'PaddingLeft','PaddingRight','PaddingTop','CornerRadius','FillDirection',
 'HorizontalAlignment','VerticalAlignment','SortOrder','Wraps','Color',
@@ -154,7 +168,7 @@ _stack)end end function d:Dump(v)v=v or self.Options or{}local w={format=
 IncludeInstanceTree then w.instanceTree=r(j(self.App),true)end return t(w)end
 function d.DumpApp(v,w)local x=d.FromContext(v)if x then return x:Dump(w)end
 return t{format='CascadeAppDump',version=1,mode='instance',root=r(j(v),true)}end
-return d end function a.f()local c=a.cache.f if not c then c={c=b()}a.cache.f=c
+return d end function a.g()local c=a.cache.g if not c then c={c=b()}a.cache.g=c
 end return c.c end end do local b=function()return{['00Circle']=
 'rbxassetid://83028270380365',['00CircleFill']='rbxassetid://86809068648199',[
 '00Square']='rbxassetid://122749670129495',['00SquareFill']=
@@ -5994,9 +6008,9 @@ goforward60='rbxassetid://116153177521739',mic='rbxassetid://70559142840213',
 figureSeatedSideAirbagOn2='rbxassetid://133224719349931',number16Circle=
 'rbxassetid://107648080370730',letterFCircle='rbxassetid://75292206915955',
 dotCircleAndCursorarrow='rbxassetid://115122421262820',goforward30=
-'rbxassetid://77322694446691'}end function a.g()local c=a.cache.g if not c then
-c={c=b()}a.cache.g=c end return c.c end end do local b=function()local b,c=a.e()
-,a.d()local d,e,f,g=b.Workspace,b.Lighting,c.Create,function(d,e,f,g,h)return(d-
+'rbxassetid://77322694446691'}end function a.h()local c=a.cache.h if not c then
+c={c=b()}a.cache.h=c end return c.c end end do local b=function()local b,c=a.f()
+,a.e()local d,e,f,g=b.Workspace,b.Lighting,c.Create,function(d,e,f,g,h)return(d-
 e)*(h-g)/(f-e)+g end local h,i=function(h,i)local j=d.CurrentCamera:
 ScreenPointToRay(h.X,h.Y)return j.Origin+j.Direction*i end,function()local h=d.
 CurrentCamera.ViewportSize.Y return g(h,0,2560,8,56)end local j=function(j)local
@@ -6024,10 +6038,10 @@ GetPropertyChangedSignal'AbsolutePosition':Connect(function()n(k)end)k:
 GetPropertyChangedSignal'AbsoluteSize':Connect(function()n(k)end)k:
 GetPropertyChangedSignal'Visible':Connect(function()m.SetVisibility(k.Visible)
 end)k.Destroying:Connect(function()o:Destroy()end)m.Model=o n(k)return m end end
-function a.h()local c=a.cache.h if not c then c={c=b()}a.cache.h=c end return c.
-c end end do local b=function()return{UIBlur=a.h()}end function a.i()local c=a.
-cache.i if not c then c={c=b()}a.cache.i=c end return c.c end end do local b=
-function()return function(b)local c,d=a.d(),a.e()local e,f,g,h=c.Create,d.
+function a.i()local c=a.cache.i if not c then c={c=b()}a.cache.i=c end return c.
+c end end do local b=function()return{UIBlur=a.i()}end function a.j()local c=a.
+cache.j if not c then c={c=b()}a.cache.j=c end return c.c end end do local b=
+function()return function(b)local c,d=a.e(),a.f()local e,f,g,h=c.Create,d.
 TweenService,{},b.Theme.Metrics or{}local i,j=h.Squared==true,
 'rbxassetid://12187365364'local k,l=i and b.Theme.Controls.WindowControlStroke
 or b.Theme.Controls.ViewBorder,i and 1 or 3 g.Body=(e'Frame'{Name='TextField',
@@ -6070,9 +6084,9 @@ Thickness=l})o:Play()end)g.Field.FocusLost:Connect(function()if o then o:Cancel(
 Field.Text==''then g.Field.PlaceholderColor3=b.Theme.Text.Tertiary[1].Value g.
 Field.TextTransparency=b.Theme.Text.Tertiary[2].Value else g.Field.TextColor3=b.
 Theme.Text.Primary[1].Value g.Field.TextTransparency=b.Theme.Text.Primary[2].
-Value end end)return g end end function a.j()local c=a.cache.j if not c then c={
-c=b()}a.cache.j=c end return c.c end end do local b=function()return function(b)
-local c,d=a.d(),a.j()(b)local e,f,g,h,i,j=c.Create,{},0,{},function(e)local f,g=
+Value end end)return g end end function a.k()local c=a.cache.k if not c then c={
+c=b()}a.cache.k=c end return c.c end end do local b=function()return function(b)
+local c,d=a.e(),a.k()(b)local e,f,g,h,i,j=c.Create,{},0,{},function(e)local f,g=
 e.AbsolutePosition,e.AbsoluteSize return{Left=f.X,Right=f.X+g.X,Top=f.Y,Bottom=f
 .Y+g.Y}end h.Body=(e'Frame'{Name='Toolbar',BorderColor3=Color3.fromRGB(0,0,0),
 BorderSizePixel=0,Size=UDim2.new(1,0,0,60),__dynamicKeys={BackgroundColor3=b.
@@ -6206,8 +6220,8 @@ end local t=i(s)local u=(t.Right>=p.Left and t.Left<=p.Right)and(t.Bottom>=p.Top
 and t.Top<=p.Bottom)if u then q=false break end end o.Visible=q end end o()h.
 Body:GetPropertyChangedSignal'AbsoluteSize':Connect(o)return h,function(p)j=p n(
 )return function(q)for r=#f,g+1,-1 do f[r]=nil end g+=1 l[g]=q end end end end
-function a.k()local c=a.cache.k if not c then c={c=b()}a.cache.k=c end return c.
-c end end do local b=function()return function(b,c)local d=a.d()local e,f=d.
+function a.l()local c=a.cache.l if not c then c={c=b()}a.cache.l=c end return c.
+c end end do local b=function()return function(b,c)local d=a.e()local e,f=d.
 Create,{}f.Handles=(e'Folder'{Name='Handles',Parent=b,e'Frame'{Name='E',
 AnchorPoint=Vector2.new(1,0.5),BackgroundColor3=Color3.fromRGB(255,0,81),
 BackgroundTransparency=1,BorderColor3=Color3.fromRGB(0,0,0),BorderSizePixel=0,
@@ -6283,9 +6297,9 @@ Position.X.Offset,b.Position.Y.Offset)end)k.DragContinue:Connect(function()j(
 Vector2.new(k.DragUDim2.X.Offset,k.DragUDim2.Y.Offset),l)end)end function g.
 CreateClient()k(f.NW,'NW')k(f.NE,'NE')k(f.SW,'SW')k(f.SE,'SE')k(f.E,'E')k(f.W,
 'W')k(f.S,'S')k(f.N,'N')end function g.SetEnabled(l)for m,n in pairs(f)do if n:
-IsA'UIDragDetector'then n.Enabled=l end end end return g end end function a.l()
-local c=a.cache.l if not c then c={c=b()}a.cache.l=c end return c.c end end do
-local b=function()return function(b,c)local d=a.d()local e,f,g=d.Create,{},{Exit
+IsA'UIDragDetector'then n.Enabled=l end end end return g end end function a.m()
+local c=a.cache.m if not c then c={c=b()}a.cache.m=c end return c.c end end do
+local b=function()return function(b,c)local d=a.e()local e,f,g=d.Create,{},{Exit
 ={ImageColor3=function()return c.CanExit and b.Theme.Controls.Exit[1].Value or b
 .Theme.Controls.WindowControlDisabled[1].Value end,ImageTransparency=function()
 return c.CanExit and b.Theme.Controls.Exit[2].Value or b.Theme.Controls.
@@ -6350,9 +6364,9 @@ new(0.5,0.5),BackgroundColor3=Color3.fromRGB(255,255,255),BackgroundTransparency
 'rbxassetid://114376524082699',Position=UDim2.fromScale(0.5,0.5),Size=UDim2.
 fromScale(1,1),Visible=false,__dynamicKeys={ImageColor3=b.Theme.Controls.
 WindowControlIcon[1],ImageTransparency=b.Theme.Controls.WindowControlIcon[2]}}}
-return f,g end end function a.m()local c=a.cache.m if not c then c={c=b()}a.
-cache.m=c end return c.c end end do local b=function()return function(b,c,d)
-local e=a.d()local f,g,h=e.Create,c.Titlebar,{}c.WindowControls.Body.Visible=
+return f,g end end function a.n()local c=a.cache.n if not c then c={c=b()}a.
+cache.n=c end return c.c end end do local b=function()return function(b,c,d)
+local e=a.e()local f,g,h=e.Create,c.Titlebar,{}c.WindowControls.Body.Visible=
 false g.NavigationButtons.Visible=false g.SidebarButton.Parent.Visible=false g.
 TitleStack.Visible=false h.Body=f'Frame'{Name='Brand',AutomaticSize=Enum.
 AutomaticSize.X,BackgroundTransparency=1,BorderSizePixel=0,LayoutOrder=-1,Size=
@@ -6468,9 +6482,9 @@ HorizontalAlignment.Left h.Title.TextXAlignment=Enum.TextXAlignment.Left h.
 Subtitle.TextXAlignment=Enum.TextXAlignment.Left h.TitleStack.Parent=h.Body.
 __instance or h.Body end end h.Subtitle.Text=d.Subtitle or''h.Subtitle.Visible=(
 d.Subtitle or'')~=''g.SearchField.Body.LayoutOrder=1 return h end end function a
-.n()local c=a.cache.n if not c then c={c=b()}a.cache.n=c end return c.c end end
-do local b=function()a.b()return function(b,c)local d,e,f,g,h,i=a.i(),a.e(),a.d(
-),a.c(),a.k()(b)local j,k,l,m,n=a.l(),f.Create,e.UserInputService,e.TweenService
+.o()local c=a.cache.o if not c then c={c=b()}a.cache.o=c end return c.c end end
+do local b=function()a.b()return function(b,c)local d,e,f,g,h,i=a.j(),a.f(),a.e(
+),a.c(),a.l()(b)local j,k,l,m,n=a.m(),f.Create,e.UserInputService,e.TweenService
 ,b.__container or b.__instance or b local o,p,q,r,s,t,u,v=k'Frame'{Name='Window'
 ,BackgroundTransparency=1,BorderSizePixel=0,Size=UDim2.fromScale(1,1),
 AnchorPoint=Vector2.new(0.5,0.5),Position=UDim2.fromScale(0.5,0.5),Parent=n}.
@@ -6480,7 +6494,7 @@ Resizable=c.Resizable~=false c.Draggable=c.Draggable~=false c.CanExit=c.CanExit
 ~=false c.CanMinimize=c.CanMinimize~=false c.CanZoom=c.CanZoom~=false c.
 Resizable=c.Resizable~=false c.Dropshadow=c.Dropshadow~=false c.UIBlur=c.UIBlur
 ~=false c.Title=c.Title or'Title'c.Chrome=c.Chrome or'Minimal'c.Centered=c.
-Centered~=false local w,x=a.m()(b,c)p.Body=(g.Apply(c,k'Frame'{Name='Body',
+Centered~=false local w,x=a.n()(b,c)p.Body=(g.Apply(c,k'Frame'{Name='Body',
 BorderSizePixel=0,AnchorPoint=Vector2.new(0.5,0.5),Position=UDim2.fromScale(0.5,
 0.5),Parent=o,__dynamicKeys={BackgroundColor3=b.Theme.Controls.Sidebar[1],
 BackgroundTransparency=b.Theme.Controls.Sidebar[2]},__contextKeys={
@@ -6549,7 +6563,7 @@ Content=(p.ContentBody:FindFirstChild'Content')p.CornerClip=(p.ContentBody:
 FindFirstChild'CornerClip')p.Titlebar=h local y=Instance.new'Folder'y.Name=
 'OverlayLayer'y.Parent=p.Body.__instance p.Titlebar.Body.ZIndex=10 p.Titlebar.
 Body.Parent=y p.WindowControls=w p.WindowControls.Body.Parent=p.Toolbar if c.
-Chrome=='Minimal'then p.MinimalChrome=a.n()(b,p,c)end q=p.Body.Size r=p.Body.
+Chrome=='Minimal'then p.MinimalChrome=a.o()(b,p,c)end q=p.Body.Size r=p.Body.
 Position local z={Title=function(z)p.Titlebar.Title.Visible=z and true or false
 if z then p.Titlebar.Title.Text=z if p.MinimalChrome then p.MinimalChrome.Title.
 Text=z end end end,Logo=function(z)if not p.MinimalChrome then return end p.
@@ -6657,9 +6671,9 @@ Scale,D.X.Offset+G.X,D.Y.Scale,D.Y.Offset+G.Y)p.Body.Position=H end end end)end
 g.Apply(c,A)local B=function()for B,C in pairs(p.Body:GetDescendants())do if not
 pcall(function()return C.Size end)then continue end local D=C.Size C.Size=UDim2.
 fromOffset(0,0)C.Size=D end end task.defer(B)task.delay(1,B)return A end end
-function a.o()local c=a.cache.o if not c then c={c=b()}a.cache.o=c end return c.
-c end end do local b=function()a.b()return function(b,c)local d,e,f=a.d(),a.c(),
-a.e()local g,h,i,j,k,l,m=d.Create,f.TweenService,b.Type=='Window'and b.
+function a.p()local c=a.cache.p if not c then c={c=b()}a.cache.p=c end return c.
+c end end do local b=function()a.b()return function(b,c)local d,e,f=a.e(),a.c(),
+a.f()local g,h,i,j,k,l,m=d.Create,f.TweenService,b.Type=='Window'and b.
 Structures.SidebarList or b.__instance or b,{},b.Theme.Metrics or{},
 'rbxassetid://12187365364',function(g,h,i,...)local j=table.pack(...)for k,l in
 ipairs(g:GetChildren())do if l:IsA'GuiObject'then table.insert(h,l:
@@ -6717,8 +6731,8 @@ Exponential,Enum.EasingDirection.Out),{Rotation=o and 0 or-90}):Play()end}local
 p=e.Wrap(c,o,j.SidebarGroup)p.Type='Section'p.Theme=b.Theme p.Structures=j p.
 __window=b j.SidebarGroup.MouseButton1Click:Connect(function()if not c.
 Disclosure then return end p.Expanded=not p.Expanded end)e.Apply(c,p)return p
-end end function a.p()local c=a.cache.p if not c then c={c=b()}a.cache.p=c end
-return c.c end end do local b=function()a.b()return function(b,c)local d,e=a.d()
+end end function a.q()local c=a.cache.q if not c then c={c=b()}a.cache.q=c end
+return c.c end end do local b=function()a.b()return function(b,c)local d,e=a.e()
 ,a.c()local f=d.Create c=c or{}local g={}g.Page=(e.Apply(c,f'ScrollingFrame'{
 Name='ContentList',AutomaticCanvasSize=Enum.AutomaticSize.Y,BackgroundColor3=
 Color3.fromRGB(255,255,255),BackgroundTransparency=1,BorderColor3=Color3.
@@ -6737,9 +6751,9 @@ PaddingTop=UDim.new(0,18)else l.PaddingTop=UDim.new(0,0)end end end end end g.
 Page.ChildAdded:Connect(h)g.Page.ChildRemoved:Connect(h)h()local i=e.Wrap(c,{
 Parent=function(i)g.Page.Parent=i end},g.Page)i.Type='Page'i.Theme=b.Theme i.
 Structures=g if b.__window then i.__window=b.__window end i.__container=g.Page.
-__instance or g.Page return i end end function a.q()local c=a.cache.q if not c
-then c={c=b()}a.cache.q=c end return c.c end end do local b=function()a.b()
-return function(b,c)local d,e,f=a.d(),a.c(),a.q()local g,h,i,j,k,l=d.Create,b.
+__instance or g.Page return i end end function a.r()local c=a.cache.r if not c
+then c={c=b()}a.cache.r=c end return c.c end end do local b=function()a.b()
+return function(b,c)local d,e,f=a.e(),a.c(),a.r()local g,h,i,j,k,l=d.Create,b.
 Type=='Window'and b or b.__window,b.Type=='Window'and b.Structures.SidebarList
 or b.Type=='Tab'and b.__instance.Parent or b.__instance or b,{},b.Theme.Metrics
 or{},'rbxassetid://12187365364'c=c or{}c.Title=c.Title or'Label'c.Indentation=c.
@@ -6816,9 +6830,9 @@ Structures=j n.__container=j.Page.__instance or j.Page n.__window=b.__window e.
 Apply(c,n)if h then table.insert(h.Tabs,n)if n.Selected then h.addToHistory(n.
 __container)end j.Body.MouseButton1Click:Connect(function()if n.Selected then
 return end n.Selected=true h.addToHistory(n.__container)end)end if b.Type=='Tab'
-then n.Indentation=b.Indentation+1 end return n end end function a.r()local c=a.
-cache.r if not c then c={c=b()}a.cache.r=c end return c.c end end do local b=
-function()return function(b)local c=a.d()local d,e,f,g=c.Create,{},b.Theme.
+then n.Indentation=b.Indentation+1 end return n end end function a.s()local c=a.
+cache.s if not c then c={c=b()}a.cache.s=c end return c.c end end do local b=
+function()return function(b)local c=a.e()local d,e,f,g=c.Create,{},b.Theme.
 Metrics or{TitleSize=15,SubtitleVisible=true,Mono=false},
 'rbxassetid://12187365364'e.Body=(d'Frame'{Name='TitleStack',AutomaticSize=Enum.
 AutomaticSize.XY,BackgroundColor3=Color3.fromRGB(255,255,255),
@@ -6840,9 +6854,9 @@ TextTransparency=0.15,TextTruncate=Enum.TextTruncate.AtEnd,TextWrapped=true,
 TextXAlignment=Enum.TextXAlignment.Left,__dynamicKeys={TextColor3=b.Theme.Text.
 Primary[1],TextTransparency=b.Theme.Text.Primary[2]}}})e.Title=(e.Body:
 FindFirstChild'Title')e.Subtitle=(e.Body:FindFirstChild'Subtitle')e.Padding=(e.
-Body:FindFirstChild'UIPadding')return e end end function a.s()local c=a.cache.s
-if not c then c={c=b()}a.cache.s=c end return c.c end end do local b=function()a
-.b()return function(b,c)local d,e,f=a.d(),a.c(),a.s()local g,h,i,j=d.Create,b.
+Body:FindFirstChild'UIPadding')return e end end function a.t()local c=a.cache.t
+if not c then c={c=b()}a.cache.t=c end return c.c end end do local b=function()a
+.b()return function(b,c)local d,e,f=a.e(),a.c(),a.t()local g,h,i,j=d.Create,b.
 __container or b.__instance or b,f(b),b.Theme.Metrics or{}c=c or{}c.Title=c.
 Title or'Title'local k=g'Frame'{Name='PageSection',BackgroundTransparency=1,Size
 =UDim2.fromScale(1,0),AutomaticSize=Enum.AutomaticSize.Y,Parent=h,g
@@ -6891,9 +6905,9 @@ Image=n or''end,IconColor=function(n)i.IconImage.ImageColor3=n i.Icon.
 BackgroundColor3=n end,Badge=function(n)local o=type(n)=='string'and n or''i.
 Badge.Visible=o~=''i.BadgeLabel.Text=o end,BadgeActive=function(n)c.BadgeActive=
 n==true m()end},k)n.Type='PageSection'n.Theme=b.Theme n.Structures=i n.
-__container=k.__instance e.Apply(c,n)return n end end function a.t()local c=a.
-cache.t if not c then c={c=b()}a.cache.t=c end return c.c end end do local b=
-function()a.b()return function(b,c)local d,e=a.d(),a.c()local f,g,h,i,j,k=d.
+__container=k.__instance e.Apply(c,n)return n end end function a.u()local c=a.
+cache.u if not c then c={c=b()}a.cache.u=c end return c.c end end do local b=
+function()a.b()return function(b,c)local d,e=a.e(),a.c()local f,g,h,i,j,k=d.
 Create,b.__container or b.__instance or b,{},b.Theme.Metrics or{},{},{}c=c or{}h
 .Body=(e.Apply(c,f'Frame'{Name='Form',AutomaticSize=Enum.AutomaticSize.Y,
 BackgroundColor3=Color3.fromRGB(255,255,255),BackgroundTransparency=1,
@@ -6907,9 +6921,9 @@ Visible=o and q==true end end h.Body.ChildAdded:Connect(function(n)if n:IsA
 'Frame'and n:FindFirstChild'LayoutIgnore'then local o=n.LayoutIgnore:
 FindFirstChild'Divider'if o then table.insert(j,o)table.insert(k,{section=n,
 divider=o})n:GetPropertyChangedSignal'Visible':Connect(function()m()end)m()end
-end end)e.Apply(c,l)return l end end function a.u()local c=a.cache.u if not c
-then c={c=b()}a.cache.u=c end return c.c end end do local b=function()a.b()
-return function(b,c)local d,e,f=a.d(),a.c(),a.g()local g,h,i,j=d.Create,b.
+end end)e.Apply(c,l)return l end end function a.v()local c=a.cache.v if not c
+then c={c=b()}a.cache.v=c end return c.c end end do local b=function()a.b()
+return function(b,c)local d,e,f=a.e(),a.c(),a.h()local g,h,i,j=d.Create,b.
 __container or b.__instance or b,{},b.Theme.Metrics or{RowPadding=10}c=c or{}i.
 Body=(e.Apply(c,g'Frame'{Name='Row',AutomaticSize=Enum.AutomaticSize.Y,
 BackgroundColor3=Color3.fromRGB(255,255,255),BackgroundTransparency=1,
@@ -6994,9 +7008,9 @@ or nil end p(n.Value)local q=n.ValueChanged n.ValueChanged=function(r,s)p(s)if q
 then q(r,s)end end end},i.Body)n.Type='Row'n.Theme=b.Theme n.Structures=i n.Left
 =function()local o=table.clone(n)o.__container=i.LeftAccessories return o end n.
 Right=function()local o=table.clone(n)o.__container=i.RightAccessories return o
-end e.Apply(c,n)return n end end function a.v()local c=a.cache.v if not c then c
-={c=b()}a.cache.v=c end return c.c end end do local b=function()a.b()return
-function(b,c)local d,e=a.d(),a.c()local f,g,h,i=d.Create,b.__container or b.
+end e.Apply(c,n)return n end end function a.w()local c=a.cache.w if not c then c
+={c=b()}a.cache.w=c end return c.c end end do local b=function()a.b()return
+function(b,c)local d,e=a.e(),a.c()local f,g,h,i=d.Create,b.__container or b.
 __instance or b,{},function(f)if type(f)=='number'then return UDim.new(0,f)end
 return f or UDim.new(0,10)end c=c or{}c.Padding=i(c.Padding)c.VerticalAlignment=
 c.VerticalAlignment or Enum.VerticalAlignment.Center c.HorizontalAlignment=c.
@@ -7010,8 +7024,8 @@ FindFirstChild'UIListLayout')local j=e.Wrap(c,{Padding=function(j)h.Layout.
 Padding=i(j)end,HorizontalAlignment=function(j)h.Layout.HorizontalAlignment=j
 end,VerticalAlignment=function(j)h.Layout.VerticalAlignment=j end},h.Body)j.Type
 ='HStack'j.Theme=b.Theme j.Structures=h e.Apply(c,j)return j end end function a.
-w()local c=a.cache.w if not c then c={c=b()}a.cache.w=c end return c.c end end
-do local b=function()a.b()return function(b,c)local d,e=a.d(),a.c()local f,g,h,i
+x()local c=a.cache.x if not c then c={c=b()}a.cache.x=c end return c.c end end
+do local b=function()a.b()return function(b,c)local d,e=a.e(),a.c()local f,g,h,i
 =d.Create,b.__container or b.__instance or b,{},function(f)if type(f)=='number'
 then return UDim.new(0,f)end return f or UDim.new(0,10)end c=c or{}c.Padding=i(c
 .Padding)c.VerticalAlignment=c.VerticalAlignment or Enum.VerticalAlignment.
@@ -7025,15 +7039,15 @@ FindFirstChild'UIListLayout')local j=e.Wrap(c,{Padding=function(j)h.Layout.
 Padding=i(j)end,HorizontalAlignment=function(j)h.Layout.HorizontalAlignment=j
 end,VerticalAlignment=function(j)h.Layout.VerticalAlignment=j end},h.Body)j.Type
 ='VStack'j.Theme=b.Theme j.Structures=h e.Apply(c,j)return j end end function a.
-x()local c=a.cache.x if not c then c={c=b()}a.cache.x=c end return c.c end end
-do local b=function()a.b()return function(b,c)local d,e=a.c(),a.s()local f,g=e(b
+y()local c=a.cache.y if not c then c={c=b()}a.cache.y=c end return c.c end end
+do local b=function()a.b()return function(b,c)local d,e=a.c(),a.t()local f,g=e(b
 ),b.Theme.Metrics or{SubtitleVisible=true}c=c or{}c.Title=c.Title or'Title'f.
 Body.Parent=b.__container or b.__instance or b local h=d.Wrap(c,{Title=function(
 h)f.Title.Text=h end,Subtitle=function(h)f.Subtitle.Visible=g.SubtitleVisible~=
 false f.Subtitle.Text=h end},f.Body)h.Type='TitleStack'h.Theme=b.Theme h.
-Structures=f d.Apply(c,h)return h end end function a.y()local c=a.cache.y if not
-c then c={c=b()}a.cache.y=c end return c.c end end do local b=function()a.b()
-return function(b,c)local d,e=a.d(),a.c()local f,g,h=d.Create,b.__container or b
+Structures=f d.Apply(c,h)return h end end function a.z()local c=a.cache.z if not
+c then c={c=b()}a.cache.z=c end return c.c end end do local b=function()a.b()
+return function(b,c)local d,e=a.e(),a.c()local f,g,h=d.Create,b.__container or b
 .__instance or b,{}c=c or{}c.Text=c.Text or'Label'h.Body=(f'TextLabel'{Name=
 'Label',AutomaticSize=Enum.AutomaticSize.XY,BackgroundColor3=Color3.fromRGB(255,
 255,255),BackgroundTransparency=1,BorderColor3=Color3.fromRGB(0,0,0),
@@ -7041,9 +7055,9 @@ BorderSizePixel=0,FontFace=Font.new'rbxassetid://12187365364',RichText=true,
 TextSize=15,TextTruncate=Enum.TextTruncate.AtEnd,TextWrapped=true,Parent=g,
 __dynamicKeys={TextColor3=b.Theme.Text.Secondary[1],TextTransparency=b.Theme.
 Text.Secondary[2]}})local i=e.Wrap(c,{},h.Body)i.Type='Label'i.Theme=b.Theme i.
-Structures=h e.Apply(c,i)return i end end function a.z()local c=a.cache.z if not
-c then c={c=b()}a.cache.z=c end return c.c end end do local b=function()a.b()
-return function(b,c)local d,e=a.d(),a.c()local f,g,h=d.Create,b.__container or b
+Structures=h e.Apply(c,i)return i end end function a.A()local c=a.cache.A if not
+c then c={c=b()}a.cache.A=c end return c.c end end do local b=function()a.b()
+return function(b,c)local d,e=a.e(),a.c()local f,g,h=d.Create,b.__container or b
 .__instance or b,{}c=c or{}c.Style=c.Style or'Primary'c.Size=c.Size or UDim2.
 fromOffset(20,20)h.Body=(f'ImageLabel'{Name='Image',AutomaticSize=Enum.
 AutomaticSize.XY,BackgroundColor3=Color3.fromRGB(255,255,255),
@@ -7057,9 +7071,9 @@ Style=function(i)if i=='Primary'then h.Body.ImageColor3=b.Theme.Text.Primary[1].
 Value h.Body.ImageTransparency=b.Theme.Text.Primary[2].Value else h.Body.
 ImageColor3=b.Theme.Text.Secondary[1].Value h.Body.ImageTransparency=b.Theme.
 Text.Secondary[2].Value end end},h.Body)i.Type='Symbol'i.Theme=b.Theme i.
-Structures=h e.Apply(c,i)return i end end function a.A()local c=a.cache.A if not
-c then c={c=b()}a.cache.A=c end return c.c end end do local b=function()a.b()
-return function(b,c)local d,e,f=a.d(),a.c(),a.e()local g,h,i,j,k=d.Create,f.
+Structures=h e.Apply(c,i)return i end end function a.B()local c=a.cache.B if not
+c then c={c=b()}a.cache.B=c end return c.c end end do local b=function()a.b()
+return function(b,c)local d,e,f=a.e(),a.c(),a.f()local g,h,i,j,k=d.Create,f.
 TweenService,b.__container or b.__instance or b,b.Theme.Controls.Toggle,{}c=c or
 {}c.Value=c.Value==true k.Body=(e.Apply(c,g'Frame'{Name='Toggle',
 BackgroundColor3=Color3.fromRGB(255,255,255),BackgroundTransparency=1,
@@ -7101,9 +7115,9 @@ Switch.ImageTransparency=q.ImageTransparency end if c.ValueChanged and n then c.
 Value=m task.spawn(c.ValueChanged,l,m)end end}l=e.Wrap(c,m,k.Body)l.Type=
 'Toggle'l.Theme=b.Theme l.Structures=k do k.Switch.MouseButton1Click:Connect(
 function()l.Value=not l.Value end)end m.Value(not not c.Value,false)e.Apply(c,l,
-{'Value'})return l end end function a.B()local c=a.cache.B if not c then c={c=b(
-)}a.cache.B=c end return c.c end end do local b=function()a.b()return function(b
-,c)local d,e=a.c(),a.j()(b)c=c or{}c.Value=c.Value~=nil and c.Value or''c.
+{'Value'})return l end end function a.C()local c=a.cache.C if not c then c={c=b(
+)}a.cache.C=c end return c.c end end do local b=function()a.b()return function(b
+,c)local d,e=a.c(),a.k()(b)c=c or{}c.Value=c.Value~=nil and c.Value or''c.
 Placeholder=c.Placeholder or'Placeholder'e.Field.TextTruncate=Enum.TextTruncate.
 AtEnd e.Field.TextXAlignment=Enum.TextXAlignment.Right e.Body.Parent=b.
 __container or b.__instance or b local f f=d.Wrap(c,{Placeholder=function(g)e.
@@ -7114,9 +7128,9 @@ FocusLost:Connect(function()e.Body.AutomaticSize=Enum.AutomaticSize.None if f.
 Value~=e.Field.Text then f.Value=e.Field.Text end end)f.Type='TextField'f.Theme=
 b.Theme f.Structures=e d.Apply(c,f)e.Field:GetPropertyChangedSignal'Text':
 Connect(function()if c.TextChanged then task.spawn(c.TextChanged,f,e.Field.Text
-or'')end end)return f end end function a.C()local c=a.cache.C if not c then c={c
-=b()}a.cache.C=c end return c.c end end do local b=function()local b,c=a.b(),{}
-return function(d,e)local f,g=a.c(),a.e()local h,i,j=g.UserInputService,a.j()(d)
+or'')end end)return f end end function a.D()local c=a.cache.D if not c then c={c
+=b()}a.cache.D=c end return c.c end end do local b=function()local b,c=a.b(),{}
+return function(d,e)local f,g=a.c(),a.f()local h,i,j=g.UserInputService,a.k()(d)
 ,0 e=e or{}e.Placeholder=e.Placeholder or'Not bound'e.Owner=e.Owner or
 'another keybind'i.Field.TextXAlignment=Enum.TextXAlignment.Right i.Field.
 TextEditable=false i.Body.Parent=d.__container or d.__instance or d i.Body.
@@ -7141,9 +7155,9 @@ KeyCode,true,q)end return end local r=p.KeyCode i.Field:ReleaseFocus()if r==Enum
 KeyCode.Delete then o.Value=nil return end local s=c[r]if s and s~=e.Owner then
 n(r,s)return end o.Value=r end)o.Type='KeybindField'o.Theme=d.Theme o.Structures
 =i i.Body.Destroying:Connect(function()if e.Value and c[e.Value]==e.Owner then c
-[e.Value]=nil end end)f.Apply(e,o)return o end end function a.D()local c=a.cache
-.D if not c then c={c=b()}a.cache.D=c end return c.c end end do local b=function
-()a.b()return function(b,c)local d,e=a.d(),a.c()local f,g,h,i,j=d.Create,b.
+[e.Value]=nil end end)f.Apply(e,o)return o end end function a.E()local c=a.cache
+.E if not c then c={c=b()}a.cache.E=c end return c.c end end do local b=function
+()a.b()return function(b,c)local d,e=a.e(),a.c()local f,g,h,i,j=d.Create,b.
 __container or b.__instance or b,b.Theme.Controls.Slider,0,{}c=c or{}c.Value=c.
 Value or 0 c.Maximum=c.Maximum or 1 c.Minimum=c.Minimum or 0 j.Body=(e.Apply(c,f
 'ImageLabel'{Name='Slider',Active=true,AnchorPoint=Vector2.new(0,0.5),
@@ -7194,9 +7208,9 @@ Value=l task.spawn(c.ValueChanged,k,l)end end}k=e.Wrap(c,l,j.Body)k.Type=
 Body.AbsoluteSize.X,j.Thumb.AbsoluteSize.X local o=n/2 local p,q,r=o,m-o,j.
 Dragger.DragUDim2.X.Offset local s=i+r local t=math.clamp(s,p,q)local u=(t-p)/(q
 -p)k.Value=k.Minimum+(k.Maximum-k.Minimum)*u end)e.Apply(c,k)return k end end
-function a.E()local c=a.cache.E if not c then c={c=b()}a.cache.E=c end return c.
-c end end do local b=function()a.b()return function(b,c)local d,e,f=a.d(),a.c(),
-a.e()local g,h,i,j,k,l=d.Create,f.TweenService,b.__container or b.__instance or
+function a.F()local c=a.cache.F if not c then c={c=b()}a.cache.F=c end return c.
+c end end do local b=function()a.b()return function(b,c)local d,e,f=a.e(),a.c(),
+a.f()local g,h,i,j,k,l=d.Create,f.TweenService,b.__container or b.__instance or
 b,b.Theme.Controls.Button,{},b.Theme.Metrics or{}local m,n,o=l.Squared==true,
 'rbxassetid://12187365364',function()local m=c.State return m=='Primary'and b.
 Theme.Controls.SelectionFocused or m=='Destructive'and b.Theme.Accents.Red or b.
@@ -7270,45 +7284,45 @@ EasingDirection.Out)h:Create(k.PressOverlay,t,{BackgroundTransparency=1}):Play()
 end k.Body.MouseButton1Down:Connect(function()local u=TweenInfo.new(0.08,Enum.
 EasingStyle.Cubic,Enum.EasingDirection.Out)h:Create(k.PressOverlay,u,{
 BackgroundTransparency=0.8}):Play()end)k.Body.MouseButton1Up:Connect(t)k.Body.
-MouseLeave:Connect(t)e.Apply(c,s)return s end end function a.F()local c=a.cache.
-F if not c then c={c=b()}a.cache.F=c end return c.c end end do local b=function(
-)a.b()return function(b,c)local d,e,f=a.d(),a.c(),a.j()local g,h,i,j,k,l,m=d.
+MouseLeave:Connect(t)e.Apply(c,s)return s end end function a.G()local c=a.cache.
+G if not c then c={c=b()}a.cache.G=c end return c.c end end do local b=function(
+)a.b()return function(b,c)local d,e,f=a.e(),a.c(),a.k()local g,h,i,j,k,l,m=d.
 Create,'rbxassetid://71994936177602','rbxassetid://116067852952871',b.
 __container or b.__instance or b,b.Theme.Controls.Stepper,{},b.Theme.Metrics or{
-}local n,o,p,q,r,s,t,u=m.Squared==true,m.ControlHeight or 31,
-'rbxassetid://12187365364',false,{},0.35,0.083,function(n)local o=tostring(n)
-local p,q=string.find(o,'%.'),0 if p then q=#o-p end return q end local v,w=
-function(v,w)local x,y=u(w),u(v)local z=math.max(x,y)local A='%.'..z..'f'return
-string.format(A,v)end,function(v,w)local x=10^(w or 0)return math.floor(v*x+0.5)
-/x end c=c or{}c.Value=c.Value or 0 c.Step=c.Step or 0.1 c.Maximum=c.Maximum or
-1 c.Minimum=c.Minimum or 0 c.Fielded=c.Fielded or false local x,y=function()
-return g'ImageLabel'{Name='Stepper',AutomaticSize=Enum.AutomaticSize.X,
-BorderColor3=Color3.fromRGB(0,0,0),BorderSizePixel=0,ClipsDescendants=true,Image
-='',Size=UDim2.fromOffset(0,o),Parent=j,__dynamicKeys={BackgroundColor3=b.Theme.
-Controls.Background[1],BackgroundTransparency=b.Theme.Controls.Background[2]},g
-'UICorner'{Name='UICorner',CornerRadius=UDim.new(0,m.Radius or 2)},g'UIStroke'{
-Name='UIStroke',ApplyStrokeMode=Enum.ApplyStrokeMode.Border,Thickness=1,
-__dynamicKeys={Color=b.Theme.Controls.ViewBorder[1],Transparency=b.Theme.
-Controls.ViewBorder[2]}},g'UIListLayout'{Name='UIListLayout',FillDirection=Enum.
-FillDirection.Horizontal,SortOrder=Enum.SortOrder.LayoutOrder,VerticalAlignment=
-Enum.VerticalAlignment.Center},g'Frame'{Name='Divider',BorderColor3=Color3.
-fromRGB(0,0,0),BorderSizePixel=0,LayoutOrder=1,Size=UDim2.new(0,1,1,0),
-__dynamicKeys={BackgroundColor3=k.Separator[1],BackgroundTransparency=k.
-Separator[2]}},g'Frame'{Name='Arrows',BackgroundColor3=Color3.fromRGB(255,255,
-255),BackgroundTransparency=1,BorderColor3=Color3.fromRGB(0,0,0),BorderSizePixel
-=0,LayoutOrder=2,Size=UDim2.new(0,20,1,0),g'UIListLayout'{Name='UIListLayout',
-HorizontalAlignment=Enum.HorizontalAlignment.Center,SortOrder=Enum.SortOrder.
-LayoutOrder,VerticalAlignment=Enum.VerticalAlignment.Center},g'ImageButton'{Name
-='Up',AutoButtonColor=false,BackgroundColor3=Color3.fromRGB(255,255,255),
-BackgroundTransparency=1,BorderColor3=Color3.fromRGB(0,0,0),BorderSizePixel=0,
-Image='',Size=UDim2.fromOffset(20,14.5),__dynamicKeys={ImageColor3=b.Theme.Text.
-Primary[1],ImageTransparency=b.Theme.Text.Primary[2]},__contextKeys={ImageColor3
-=function()if c.Value>=c.Maximum then return b.Theme.Text.Tertiary[1].Value else
-return b.Theme.Text.Primary[1].Value end end,ImageTransparency=function()if c.
-Value>=c.Maximum then return b.Theme.Text.Tertiary[2].Value else return b.Theme.
-Text.Primary[2].Value end end},g'ImageLabel'{Name='Glyph',AnchorPoint=Vector2.
-new(0.5,0.5),BackgroundColor3=Color3.fromRGB(255,255,255),BackgroundTransparency
-=1,BorderColor3=Color3.fromRGB(0,0,0),BorderSizePixel=0,Image=h,Position=UDim2.
+}local n,o,p,q,r,s,t=m.Squared==true,m.ControlHeight or 31,false,{},0.35,0.083,
+function(n)local o=tostring(n)local p,q=string.find(o,'%.'),0 if p then q=#o-p
+end return q end local u,v=function(u,v)local w,x=t(v),t(u)local y=math.max(w,x)
+local z='%.'..y..'f'return string.format(z,u)end,function(u,v)local w=10^(v or 0
+)return math.floor(u*w+0.5)/w end c=c or{}c.Value=c.Value or 0 c.Step=c.Step or
+0.1 c.Maximum=c.Maximum or 1 c.Minimum=c.Minimum or 0 c.Fielded=c.Fielded or
+false local w,x=function()return g'ImageLabel'{Name='Stepper',AutomaticSize=Enum
+.AutomaticSize.X,BorderColor3=Color3.fromRGB(0,0,0),BorderSizePixel=0,
+ClipsDescendants=true,Image='',Size=UDim2.fromOffset(0,o),Parent=j,__dynamicKeys
+={BackgroundColor3=b.Theme.Controls.Background[1],BackgroundTransparency=b.Theme
+.Controls.Background[2]},g'UICorner'{Name='UICorner',CornerRadius=UDim.new(0,m.
+Radius or 2)},g'UIStroke'{Name='UIStroke',ApplyStrokeMode=Enum.ApplyStrokeMode.
+Border,Thickness=1,__dynamicKeys={Color=b.Theme.Controls.ViewBorder[1],
+Transparency=b.Theme.Controls.ViewBorder[2]}},g'UIListLayout'{Name=
+'UIListLayout',FillDirection=Enum.FillDirection.Horizontal,SortOrder=Enum.
+SortOrder.LayoutOrder,VerticalAlignment=Enum.VerticalAlignment.Center},g'Frame'{
+Name='Divider',BorderColor3=Color3.fromRGB(0,0,0),BorderSizePixel=0,LayoutOrder=
+1,Size=UDim2.new(0,1,1,0),__dynamicKeys={BackgroundColor3=k.Separator[1],
+BackgroundTransparency=k.Separator[2]}},g'Frame'{Name='Arrows',BackgroundColor3=
+Color3.fromRGB(255,255,255),BackgroundTransparency=1,BorderColor3=Color3.
+fromRGB(0,0,0),BorderSizePixel=0,LayoutOrder=2,Size=UDim2.new(0,20,1,0),g
+'UIListLayout'{Name='UIListLayout',HorizontalAlignment=Enum.HorizontalAlignment.
+Center,SortOrder=Enum.SortOrder.LayoutOrder,VerticalAlignment=Enum.
+VerticalAlignment.Center},g'ImageButton'{Name='Up',AutoButtonColor=false,
+BackgroundColor3=Color3.fromRGB(255,255,255),BackgroundTransparency=1,
+BorderColor3=Color3.fromRGB(0,0,0),BorderSizePixel=0,Image='',Size=UDim2.
+fromOffset(20,14.5),__dynamicKeys={ImageColor3=b.Theme.Text.Primary[1],
+ImageTransparency=b.Theme.Text.Primary[2]},__contextKeys={ImageColor3=function()
+if c.Value>=c.Maximum then return b.Theme.Text.Tertiary[1].Value else return b.
+Theme.Text.Primary[1].Value end end,ImageTransparency=function()if c.Value>=c.
+Maximum then return b.Theme.Text.Tertiary[2].Value else return b.Theme.Text.
+Primary[2].Value end end},g'ImageLabel'{Name='Glyph',AnchorPoint=Vector2.new(0.5
+,0.5),BackgroundColor3=Color3.fromRGB(255,255,255),BackgroundTransparency=1,
+BorderColor3=Color3.fromRGB(0,0,0),BorderSizePixel=0,Image=h,Position=UDim2.
 fromScale(0.5,0.5),ScaleType=Enum.ScaleType.Fit,Size=UDim2.fromOffset(9,9)}},g
 'Frame'{Name='Rule',BorderColor3=Color3.fromRGB(0,0,0),BorderSizePixel=0,
 LayoutOrder=1,Size=UDim2.new(1,0,0,1),__dynamicKeys={BackgroundColor3=k.
@@ -7368,59 +7382,59 @@ __dynamicKeys={Color=k.SegmentShadow}}},g'Frame'{Name='Filler',AnchorPoint=
 Vector2.new(0,0.5),BorderColor3=Color3.fromRGB(0,0,0),BorderSizePixel=0,Position
 =UDim2.fromScale(0,0.5),Size=UDim2.new(1,0,0,2),ZIndex=0,__dynamicKeys={
 BackgroundColor3=k.Filler[1],BackgroundTransparency=k.Filler[2]}}}end l.Body=(e.
-Apply(c,(n and x or y)()))l.Arrows=n and l.Body:FindFirstChild'Arrows'or nil l.
+Apply(c,(n and w or x)()))l.Arrows=n and l.Body:FindFirstChild'Arrows'or nil l.
 Divider=n and l.Body:FindFirstChild'Divider'or nil l.IPlus=((l.Arrows or l.Body)
 :FindFirstChild'Up')l.IMinus=((l.Arrows or l.Body):FindFirstChild'Down')l.Field=
-f(b)if n then local z=function(z)local A=(z:FindFirstChild'Glyph')local B=
-function()A.ImageColor3=z.ImageColor3 A.ImageTransparency=z.ImageTransparency
-end z:GetPropertyChangedSignal'ImageColor3':Connect(B)z:GetPropertyChangedSignal
-'ImageTransparency':Connect(B)B()end z(l.IPlus)z(l.IMinus)l.Field.Stroke.Enabled
+f(b)if n then local y=function(y)local z=(y:FindFirstChild'Glyph')local A=
+function()z.ImageColor3=y.ImageColor3 z.ImageTransparency=y.ImageTransparency
+end y:GetPropertyChangedSignal'ImageColor3':Connect(A)y:GetPropertyChangedSignal
+'ImageTransparency':Connect(A)A()end y(l.IPlus)y(l.IMinus)l.Field.Stroke.Enabled
 =false l.Field.Corner.CornerRadius=UDim.new(0,8)l.Field.Padding.PaddingLeft=UDim
 .new(0,0)l.Field.Padding.PaddingRight=UDim.new(0,0)l.Field.Body.AutomaticSize=
 Enum.AutomaticSize.None l.Field.Body.Size=UDim2.fromOffset(46,o-2)l.Field.Field.
 AutomaticSize=Enum.AutomaticSize.None l.Field.Field.Size=UDim2.fromScale(1,1)l.
-Field.Field.FontFace=Font.new(p,Enum.FontWeight.SemiBold,Enum.FontStyle.Normal)l
-.Field.Field.TextSize=m.ControlTextSize or 13.5 l.Field.Field.TextXAlignment=
-Enum.TextXAlignment.Center l.Field.FieldPadding:Destroy()l.Field.Body.Parent=l.
-Body.__instance else l.Field.Padding.PaddingBottom=UDim.new(0,2)l.Field.Padding.
-PaddingTop=UDim.new(0,2)l.Field.Padding.PaddingRight=UDim.new(0,2)l.Field.Body.
-Size=UDim2.fromOffset(0,23)l.Field.Field.Size=UDim2.fromOffset(0,0)l.Field.
-Corner.CornerRadius=UDim.new(0,8)l.Field.FieldPadding:Destroy()end local z local
-A={Fielded=function(A)if n then l.Field.Body.Visible=A l.Divider.Visible=A
-return end if A then l.Field.Body.Parent=j l.Body.Parent=l.Field.Body.__instance
-l.Body.LayoutOrder=1 else l.Field.Body.Parent=nil l.Body.Parent=j l.Body.
-LayoutOrder=0 end end,Value=function(A)if A<=c.Minimum then l.IMinus.ImageColor3
-=b.Theme.Text.Tertiary[1].Value l.IMinus.ImageTransparency=b.Theme.Text.Tertiary
-[2].Value l.IMinus.Interactable=false else l.IMinus.ImageColor3=b.Theme.Text.
-Primary[1].Value l.IMinus.ImageTransparency=b.Theme.Text.Primary[2].Value l.
-IMinus.Interactable=true end if A>=c.Maximum then l.IPlus.ImageColor3=b.Theme.
-Text.Tertiary[1].Value l.IPlus.ImageTransparency=b.Theme.Text.Tertiary[2].Value
-l.IPlus.Interactable=false else l.IPlus.ImageColor3=b.Theme.Text.Primary[1].
-Value l.IPlus.ImageTransparency=b.Theme.Text.Primary[2].Value l.IPlus.
-Interactable=true end if l.Field then l.Field.Field.Text=v(A,c.Step)end if c.
-ValueChanged then c.Value=A task.spawn(c.ValueChanged,z,A)end end}z=e.Wrap(c,A,l
-.Body)z.Type='Stepper'z.Theme=b.Theme z.Structures=l z.Increment=function()
-assert(c.Minimum)assert(c.Maximum)local B,C=math.max(u(z.Value),u(c.Step)),z.
-Value+c.Step local D=w(C,B)z.Value=math.clamp(D,c.Minimum,c.Maximum)end z.
-Decrement=function()assert(c.Minimum)assert(c.Maximum)local B,C=math.max(u(z.
-Value),u(c.Step)),z.Value-c.Step local D=w(C,B)z.Value=math.clamp(D,c.Minimum,c.
-Maximum)end local B,C=function(B)q=true local C=(B=='Up')and z.Increment or z.
-Decrement r[B]=task.spawn(function()if q then task.wait(s)end if not q then
-return end C()while q do task.wait(t)if q then C()end end end)end,function(B)q=
-false if r[B]then task.cancel(r[B])r[B]=nil end end l.IPlus.MouseButton1Down:
-Connect(function()z.Increment()B'Up'end)l.IPlus.MouseButton1Up:Connect(function(
-)C'Up'end)l.IPlus.MouseLeave:Connect(function()C'Up'end)l.IMinus.
-MouseButton1Down:Connect(function()z.Decrement()B'Down'end)l.IMinus.
-MouseButton1Up:Connect(function()C'Down'end)l.IMinus.MouseLeave:Connect(function
-()C'Down'end)l.Body.AncestryChanged:Connect(function(D,E)if not E then C'Up'C
-'Down'for F,G in pairs(r)do if typeof(G)=='RBXScriptConnection'then G:
-Disconnect()end end r={}end end)l.Field.Field.FocusLost:Connect(function(D)if D
-then assert(c.Minimum)assert(c.Maximum)local E=l.Field.Field.Text local F=
-tonumber(E)if F and c.Fielded then c.Value=math.clamp(F,c.Minimum,c.Maximum)if c
-.Value then A.Value(c.Value)end end else l.Field.Field.Text=tostring(c.Value)end
-end)e.Apply(c,z)return z end end function a.G()local c=a.cache.G if not c then c
-={c=b()}a.cache.G=c end return c.c end end do local b=function()a.b()return
-function(b,c)local d,e=a.d(),a.c()local f,g,h,i,j=d.Create,b.__container or b.
+Field.Field.FontFace=Font.new(l.Field.Field.FontFace.Family,Enum.FontWeight.
+SemiBold,Enum.FontStyle.Normal)l.Field.Field.TextSize=m.ControlTextSize or 13.5
+l.Field.Field.TextXAlignment=Enum.TextXAlignment.Center l.Field.FieldPadding:
+Destroy()l.Field.Body.Parent=l.Body.__instance else l.Field.Padding.
+PaddingBottom=UDim.new(0,2)l.Field.Padding.PaddingTop=UDim.new(0,2)l.Field.
+Padding.PaddingRight=UDim.new(0,2)l.Field.Body.Size=UDim2.fromOffset(0,23)l.
+Field.Field.Size=UDim2.fromOffset(0,0)l.Field.Corner.CornerRadius=UDim.new(0,8)l
+.Field.FieldPadding:Destroy()end local y local z={Fielded=function(z)if n then l
+.Field.Body.Visible=z l.Divider.Visible=z return end if z then l.Field.Body.
+Parent=j l.Body.Parent=l.Field.Body.__instance l.Body.LayoutOrder=1 else l.Field
+.Body.Parent=nil l.Body.Parent=j l.Body.LayoutOrder=0 end end,Value=function(z)
+if z<=c.Minimum then l.IMinus.ImageColor3=b.Theme.Text.Tertiary[1].Value l.
+IMinus.ImageTransparency=b.Theme.Text.Tertiary[2].Value l.IMinus.Interactable=
+false else l.IMinus.ImageColor3=b.Theme.Text.Primary[1].Value l.IMinus.
+ImageTransparency=b.Theme.Text.Primary[2].Value l.IMinus.Interactable=true end
+if z>=c.Maximum then l.IPlus.ImageColor3=b.Theme.Text.Tertiary[1].Value l.IPlus.
+ImageTransparency=b.Theme.Text.Tertiary[2].Value l.IPlus.Interactable=false else
+l.IPlus.ImageColor3=b.Theme.Text.Primary[1].Value l.IPlus.ImageTransparency=b.
+Theme.Text.Primary[2].Value l.IPlus.Interactable=true end if l.Field then l.
+Field.Field.Text=u(z,c.Step)end if c.ValueChanged then c.Value=z task.spawn(c.
+ValueChanged,y,z)end end}y=e.Wrap(c,z,l.Body)y.Type='Stepper'y.Theme=b.Theme y.
+Structures=l y.Increment=function()assert(c.Minimum)assert(c.Maximum)local A,B=
+math.max(t(y.Value),t(c.Step)),y.Value+c.Step local C=v(B,A)y.Value=math.clamp(C
+,c.Minimum,c.Maximum)end y.Decrement=function()assert(c.Minimum)assert(c.Maximum
+)local A,B=math.max(t(y.Value),t(c.Step)),y.Value-c.Step local C=v(B,A)y.Value=
+math.clamp(C,c.Minimum,c.Maximum)end local A,B=function(A)p=true local B=(A==
+'Up')and y.Increment or y.Decrement q[A]=task.spawn(function()if p then task.
+wait(r)end if not p then return end B()while p do task.wait(s)if p then B()end
+end end)end,function(A)p=false if q[A]then task.cancel(q[A])q[A]=nil end end l.
+IPlus.MouseButton1Down:Connect(function()y.Increment()A'Up'end)l.IPlus.
+MouseButton1Up:Connect(function()B'Up'end)l.IPlus.MouseLeave:Connect(function()B
+'Up'end)l.IMinus.MouseButton1Down:Connect(function()y.Decrement()A'Down'end)l.
+IMinus.MouseButton1Up:Connect(function()B'Down'end)l.IMinus.MouseLeave:Connect(
+function()B'Down'end)l.Body.AncestryChanged:Connect(function(C,D)if not D then B
+'Up'B'Down'for E,F in pairs(q)do if typeof(F)=='RBXScriptConnection'then F:
+Disconnect()end end q={}end end)l.Field.Field.FocusLost:Connect(function(C)if C
+then assert(c.Minimum)assert(c.Maximum)local D=l.Field.Field.Text local E=
+tonumber(D)if E and c.Fielded then c.Value=math.clamp(E,c.Minimum,c.Maximum)if c
+.Value then z.Value(c.Value)end end else l.Field.Field.Text=tostring(c.Value)end
+end)e.Apply(c,y)return y end end function a.H()local c=a.cache.H if not c then c
+={c=b()}a.cache.H=c end return c.c end end do local b=function()a.b()return
+function(b,c)local d,e=a.e(),a.c()local f,g,h,i,j=d.Create,b.__container or b.
 __instance or b,b.Theme.Controls.RadioButtonGroup,{RadioButtons={}},b.Theme.
 Metrics or{}local k,l=j.Squared==true,'rbxassetid://12187365364'local m,n=
 function(m,n)i.RadioButtons[n]=(f'Frame'{Name='RadioButton',AutomaticSize=Enum.
@@ -7525,9 +7539,9 @@ FindFirstChild'DropShadow'.ImageTransparency=t and 0.76 or 1 end end if c.
 ValueChanged then c.Value=q task.spawn(c.ValueChanged,p,q)end end}p=e.Wrap(c,q,i
 .Body)p.Type='RadioButtonGroup'p.Theme=b.Theme p.Structures=i p.Option=function(
 r,s)local t=#i.RadioButtons+1 o(p,s,t)table.insert(c.Options or{},s)return i.
-RadioButtons[t]end e.Apply(c,p)return p end end function a.H()local c=a.cache.H
-if not c then c={c=b()}a.cache.H=c end return c.c end end do local b=function()
-local b=a.d()return function(c,d)local e=b.Create d=d or{}local f,g=c.Theme.
+RadioButtons[t]end e.Apply(c,p)return p end end function a.I()local c=a.cache.I
+if not c then c={c=b()}a.cache.I=c end return c.c end end do local b=function()
+local b=a.e()return function(c,d)local e=b.Create d=d or{}local f,g=c.Theme.
 Controls.MenuButton,{}g.Container=(e'ScreenGui'{Name='Container',IgnoreGuiInset=
 true,ResetOnSpawn=false,ScreenInsets=Enum.ScreenInsets.None,ZIndexBehavior=Enum.
 ZIndexBehavior.Sibling,DisplayOrder=2147483647,OnTopOfCoreBlur=true,e'Frame'{
@@ -7572,9 +7586,9 @@ __instance,__dynamicKeys={ImageColor3=c.Theme.Text.Primary[1],ImageTransparency=
 c.Theme.Text.Primary[2]}}e'Frame'{Name='CheckmarkRepl',BackgroundColor3=Color3.
 fromRGB(255,255,255),BackgroundTransparency=1,BorderColor3=Color3.fromRGB(0,0,0)
 ,BorderSizePixel=0,Size=UDim2.fromOffset(16,16),Visible=true,Parent=k.__instance
-}end return k.__instance end return g end end function a.I()local c=a.cache.I if
-not c then c={c=b()}a.cache.I=c end return c.c end end do local b=function()
-local b,c,d,e,f,g,h=a.I(),a.e(),a.a(),6,-1,6,{}h.__index=h local i,j,k,l,m,n,o=c
+}end return k.__instance end return g end end function a.J()local c=a.cache.J if
+not c then c={c=b()}a.cache.J=c end return c.c end end do local b=function()
+local b,c,d,e,f,g,h=a.J(),a.f(),a.a(),6,-1,6,{}h.__index=h local i,j,k,l,m,n,o=c
 .UserInputService,c.Workspace,c.GuiService,function(i)if typeof(i)=='table'then
 local j,k=pcall(function()return i.__instance end)if j and typeof(k)=='Instance'
 then return k end end return i end,function(i,j,k)if not i then return false end
@@ -7668,9 +7682,9 @@ GetMouseLocation(),k:GetGuiInset()local t,u=r.Y-s.Y,l(self.Structures.Body)local
 v=m(u,r.X,t)or m(u,r.X,r.Y)if not m(self.Structures.Menu,r.X,t)and not v then
 self.Object.Expanded=false end end)self.Structures.Body.MouseButton1Click:
 Connect(function()if self.Object then self.Object.Expanded=not self.Object.
-Expanded end end)end return h end function a.J()local c=a.cache.J if not c then
-c={c=b()}a.cache.J=c end return c.c end end do local b=function()a.b()return
-function(b,c)local d,e,f=a.d(),a.c(),a.J()local g,h,i,j,k,l,m=d.Create,30,
+Expanded end end)end return h end function a.K()local c=a.cache.K if not c then
+c={c=b()}a.cache.K=c end return c.c end end do local b=function()a.b()return
+function(b,c)local d,e,f=a.e(),a.c(),a.K()local g,h,i,j,k,l,m=d.Create,30,
 'rbxassetid://116067852952871',b.__container or b.__instance or b,b.Theme.
 Controls.MenuButton,{Options={}},b.Theme.Metrics or{}local n,o=m.Squared==true,
 'rbxassetid://12187365364'local p,q,r=n and b.Theme.Text.Tertiary or b.Theme.
@@ -7733,9 +7747,9 @@ u.Maximum>1 and'BelowButton'or'SelectedLabel')t:SetExpanded(w)end,Value=function
 Theme u.Structures=l u.Option=function(x,y)local z=#l.Options+1 local A=t:
 AddOption(y,z)table.insert(u.Options,y)v(u.Value,false)return A end u.Remove=
 function(x,y)if y then t:RemoveOption(y)u.Options[y]=nil v(u.Value,false)end end
-e.Apply(c,u)v(u.Value,false)return u end end function a.K()local c=a.cache.K if
-not c then c={c=b()}a.cache.K=c end return c.c end end do local b=function()a.b(
-)return function(b,c)local d,e,f=a.d(),a.c(),a.J()local g,h,i,j=d.Create,b.
+e.Apply(c,u)v(u.Value,false)return u end end function a.L()local c=a.cache.L if
+not c then c={c=b()}a.cache.L=c end return c.c end end do local b=function()a.b(
+)return function(b,c)local d,e,f=a.e(),a.c(),a.K()local g,h,i,j=d.Create,b.
 __container or b.__instance or b,b.Theme.Controls.MenuButton,{Options={}}c=c or{
 }c.Expanded=c.Expanded or false c.Options=c.Options or{}j.Body=(e.Apply(c,g
 'TextButton'{Name='PullDownButton',AutomaticSize=Enum.AutomaticSize.XY,
@@ -7771,9 +7785,9 @@ CurrentTab.Text=m end end,Value=function(m)k:SetValue(m)if c.ValueChanged then c
 )l.Type='PullDownButton'l.Theme=b.Theme l.Structures=j l.Option=function(n,o)
 local p=#j.Options+1 local q=k:AddOption(o,p)table.insert(l.Options,o)return q
 end l.Remove=function(n,o)if o then k:RemoveOption(o)l.Options[o]=nil end end e.
-Apply(c,l)k:SetValue(l.Value)return l end end function a.L()local c=a.cache.L if
-not c then c={c=b()}a.cache.L=c end return c.c end end do local b=function()
-local b,c={},a.e()local d,e,f,g=c.TweenService,{},4,8 function b.AddNotification
+Apply(c,l)k:SetValue(l.Value)return l end end function a.M()local c=a.cache.M if
+not c then c={c=b()}a.cache.M=c end return c.c end end do local b=function()
+local b,c={},a.f()local d,e,f,g=c.TweenService,{},4,8 function b.AddNotification
 (h,i)if#e>=f then local j=table.remove(e,1)if j and j.Object and j.Object.Close
 then j.Object:Close()end end table.insert(e,{Object=h,Frame=i})b.UpdateStack()
 end function b.UpdateStack()local h,i,j=#e,0,TweenInfo.new(0.4,Enum.EasingStyle.
@@ -7782,9 +7796,9 @@ Exponential,Enum.EasingDirection.Out)for k=h,1,-1 do local l=e[k]local m=l.Frame
 ,j,{Position=UDim2.new(1,-162.5,1,-i)}):Play()i+=math.max(m.AbsoluteSize.Y,56)+g
 if l.Object.UpdateState then l.Object:UpdateState(0)end end end function b.
 RemoveNotification(h)for i,j in ipairs(e)do if j.Object==h then table.remove(e,i
-)break end end b.UpdateStack()end return b end function a.M()local c=a.cache.M
-if not c then c={c=b()}a.cache.M=c end return c.c end end do local b=function()a
-.b()return function(b,c,d,e)local f=a.d()local g,h=f.Create,b.__instance:
+)break end end b.UpdateStack()end return b end function a.N()local c=a.cache.N
+if not c then c={c=b()}a.cache.N=c end return c.c end end do local b=function()a
+.b()return function(b,c,d,e)local f=a.e()local g,h=f.Create,b.__instance:
 FindFirstChild'Notifications'if not h then h=g'Frame'{Name='Notifications',
 BackgroundColor3=Color3.fromRGB(255,255,255),BackgroundTransparency=1,
 BorderColor3=Color3.fromRGB(0,0,0),BorderSizePixel=0,Size=UDim2.fromScale(1,1),
@@ -7881,9 +7895,9 @@ Transparency=0.9},g'UICorner'{Name='UICorner',CornerRadius=UDim.new(1,0)}},g
 Theme.Text.Primary[1].Value,Thickness=2,Transparency=0.96,__dynamicKeys={Color=b
 .Theme.Text.Primary[1]}}}},g'UIScale'{Name='UIScale',Scale=0.85}})local j,k=i.
 LayoutIgnore.Exit,i.Canvas local l,m=k.Content,k.Topbar return i,j,k,l,m end end
-function a.N()local c=a.cache.N if not c then c={c=b()}a.cache.N=c end return c.
-c end end do local b=function()a.b()return function(b,c)local d,e,f,g,h=a.e(),a.
-c(),a.M(),a.g(),a.N()local i=d.TweenService c=c or{}c.Title=c.Title or
+function a.O()local c=a.cache.O if not c then c={c=b()}a.cache.O=c end return c.
+c end end do local b=function()a.b()return function(b,c)local d,e,f,g,h=a.f(),a.
+c(),a.N(),a.h(),a.O()local i=d.TweenService c=c or{}c.Title=c.Title or
 'Notification'c.Subtitle=c.Subtitle or''c.Kind=c.Kind or'info'c.Duration=c.
 Duration or(c.Kind=='error'and 0 or 6)if c.App then c.App=string.upper(c.App)end
 local j,k,l=false,4,{Age=0}local m,n,o,p,q=h(b,c,l,k)local r=o:FindFirstChild
@@ -7933,9 +7947,9 @@ m.__instance,TweenInfo.new(0.4,Enum.EasingStyle.Exponential,Enum.EasingDirection
 .Out),{Position=UDim2.new(1,-162.5,1,0)}):Play()u()if c.Duration>0 then r.
 Visible=true i:Create(s,TweenInfo.new(c.Duration,Enum.EasingStyle.Linear),{Size=
 UDim2.fromScale(0,1)}):Play()task.delay(c.Duration,function()x()end)else r.
-Visible=false end return w end end function a.O()local c=a.cache.O if not c then
-c={c=b()}a.cache.O=c end return c.c end end do local b=function()return function
-(b)local c=a.d()local d,e=c.Create,b.__container or b.__instance or b local f=(d
+Visible=false end return w end end function a.P()local c=a.cache.P if not c then
+c={c=b()}a.cache.P=c end return c.c end end do local b=function()return function
+(b)local c=a.e()local d,e=c.Create,b.__container or b.__instance or b local f=(d
 'Frame'{Name='ImageSurface',BackgroundColor3=Color3.fromRGB(255,255,255),
 BackgroundTransparency=1,BorderColor3=Color3.fromRGB(0,0,0),BorderSizePixel=0,
 Size=UDim2.fromOffset(26,26),Parent=e,d'Frame'{Name='Surface',AnchorPoint=
@@ -7949,17 +7963,17 @@ UDim2.fromScale(0.5,0.5),Size=UDim2.fromOffset(20,20)},d'UICorner'{Name=
 90,Enabled=true,__dynamicKeys={Color=b.Theme.Controls.ImageSurface.Gradient}}}})
 local g={Body=f}g.Surface=(f:FindFirstChild'Surface')g.Image=g.Surface and(g.
 Surface:FindFirstChild'Image')g.Gradient=g.Surface and(g.Surface:FindFirstChild
-'UIGradient')return g end end function a.P()local c=a.cache.P if not c then c={c
-=b()}a.cache.P=c end return c.c end end do local b=function()a.b()return
-function(b,c)local d,e=a.c(),a.P()local f=e(b)c=c or{}c.SurfaceColor=c.
+'UIGradient')return g end end function a.Q()local c=a.cache.Q if not c then c={c
+=b()}a.cache.Q=c end return c.c end end do local b=function()a.b()return
+function(b,c)local d,e=a.c(),a.Q()local f=e(b)c=c or{}c.SurfaceColor=c.
 SurfaceColor or Color3.fromRGB(200,200,200)c.ImageColor=c.ImageColor or Color3.
 fromRGB(255,255,255)c.Gradient=c.Gradient~=false local g,h={Image=function(g)f.
 Image.Image=g end,Gradient=function(g)f.Gradient.Enabled=g end,SurfaceColor=
 function(g)f.Surface.BackgroundColor3=g end,ImageColor=function(g)f.Image.
 ImageColor3=g end}h=d.Wrap(c,g,f.Body)h.Type='ImageSurface'h.Theme=b.Theme h.
-Structures=f d.Apply(c,h)return h end end function a.Q()local c=a.cache.Q if not
-c then c={c=b()}a.cache.Q=c end return c.c end end do local b=function()a.b()
-return function(b,c)local d,e=a.d(),a.c()local f,g,h,i,j=d.Create,b.__container
+Structures=f d.Apply(c,h)return h end end function a.R()local c=a.cache.R if not
+c then c={c=b()}a.cache.R=c end return c.c end end do local b=function()a.b()
+return function(b,c)local d,e=a.e(),a.c()local f,g,h,i,j=d.Create,b.__container
 or b.__instance or b,b.Theme.Controls.StatTile,{},b.Theme.Metrics or{}c=c or{}c.
 Value=c.Value or'0'c.Muted=c.Muted==true i.Body=(f'Frame'{Name='StatTile',
 AutomaticSize=Enum.AutomaticSize.Y,BackgroundColor3=Color3.fromRGB(255,255,255),
@@ -8017,8 +8031,8 @@ function(m)if m==nil then i.Progress.Visible=false return end i.Progress.Visible
 =true i.Fill.Size=UDim2.fromScale(math.clamp(m,0,1),1)end,Wide=function(m)i.Body
 :SetAttribute('Wide',m==true)end,Muted=function(m)c.Muted=m==true k()end},i.Body
 )m.Type='StatTile'm.Theme=b.Theme m.Structures=i e.Apply(c,m)return m end end
-function a.R()local c=a.cache.R if not c then c={c=b()}a.cache.R=c end return c.
-c end end do local b=function()a.b()return function(b,c)local d,e=a.d(),a.c()
+function a.S()local c=a.cache.S if not c then c={c=b()}a.cache.S=c end return c.
+c end end do local b=function()a.b()return function(b,c)local d,e=a.e(),a.c()
 local f,g,h,i=d.Create,b.__container or b.__instance or b,{},9 c=c or{}c.Minimum
 =c.Minimum or 150 h.Body=(f'Frame'{Name='StatGrid',AutomaticSize=Enum.
 AutomaticSize.Y,BackgroundTransparency=1,BorderSizePixel=0,Size=UDim2.fromScale(
@@ -8035,9 +8049,9 @@ function()k=false j()end)end h.Body:GetPropertyChangedSignal'AbsoluteSize':
 Connect(l)h.Body.ChildAdded:Connect(function(m)if m:IsA'GuiObject'then task.
 defer(j)end end)local m=e.Wrap(c,{Minimum=function(m)c.Minimum=m j()end},h.Body)
 m.Type='StatGrid'm.Theme=b.Theme m.Structures=h m.__container=h.Body.__instance
-e.Apply(c,m)task.defer(j)return m end end function a.S()local c=a.cache.S if not
-c then c={c=b()}a.cache.S=c end return c.c end end do local b=function()a.b()
-return function(b,c)local d,e=a.d(),a.c()local f,g,h=d.Create,b.__container or b
+e.Apply(c,m)task.defer(j)return m end end function a.T()local c=a.cache.T if not
+c then c={c=b()}a.cache.T=c end return c.c end end do local b=function()a.b()
+return function(b,c)local d,e=a.e(),a.c()local f,g,h=d.Create,b.__container or b
 .__instance or b,{}c=c or{}c.Text=c.Text or'0/0'c.Active=c.Active==true h.Body=f
 'Frame'{Name='Badge',AutomaticSize=Enum.AutomaticSize.X,BorderSizePixel=0,Size=
 UDim2.fromOffset(0,21),Parent=g,f'UICorner'{Name='UICorner',CornerRadius=UDim.
@@ -8064,9 +8078,9 @@ i(c.Active==true,c.Color)end)k[2]:Connect(function()i(c.Active==true,c.Color)end
 )end local j=e.Wrap(c,{Text=function(j)h.Label.Text=j end,Active=function(j)i(j,
 c.Color)end,Color=function(j)i(c.Active==true,j)end},h.Body)j.Type='Badge'j.
 Theme=b.Theme j.Structures=h e.Apply(c,j)i(c.Active==true,c.Color)return j end
-end function a.T()local c=a.cache.T if not c then c={c=b()}a.cache.T=c end
+end function a.U()local c=a.cache.U if not c then c={c=b()}a.cache.U=c end
 return c.c end end do local b=function()a.b()return function(b,c)local d,e,f=a.
-d(),a.c(),a.g()local g,h,i,j,k=d.Create,b.__container or b.__instance or b,b.
+e(),a.c(),a.h()local g,h,i,j,k=d.Create,b.__container or b.__instance or b,b.
 Theme.Metrics or{},{},{info=f.infoCircleFill,warn=f.exclamationmarkTriangleFill,
 danger=f.exclamationmarkOctagonFill}c=c or{}c.Text=c.Text or''c.Kind=c.Kind or
 'info'j.Body=(g'Frame'{Name='Callout',BorderSizePixel=0,Size=UDim2.new(1,0,0,36)
@@ -8102,9 +8116,9 @@ function(s)c.Kind=(s=='warn'or s=='danger')and s or'info'if not c.Icon then j.
 Icon.Image=k[c.Kind]or''end m()end,Icon=function(s)local t=type(s)=='string'and
 s or nil c.Icon=t j.Icon.Image=t or k[c.Kind]or''end,Text=function(s)j.Label.
 Text=type(s)=='string'and s or''task.defer(p)end},j.Body)s.Type='Callout's.Theme
-=b.Theme s.Structures=j e.Apply(c,s)m()return s end end function a.U()local c=a.
-cache.U if not c then c={c=b()}a.cache.U=c end return c.c end end do local b=
-function()a.b()return function(b,c)local d,e,f=a.d(),a.c(),a.e()local g,h,i,j,k,
+=b.Theme s.Structures=j e.Apply(c,s)m()return s end end function a.V()local c=a.
+cache.V if not c then c={c=b()}a.cache.V=c end return c.c end end do local b=
+function()a.b()return function(b,c)local d,e,f=a.e(),a.c(),a.f()local g,h,i,j,k,
 l=d.Create,f.TweenService,b.__container or b.__instance or b,b.Theme.Metrics or{
 },{}c=c or{}c.Value=c.Value or 0 c.Indeterminate=c.Indeterminate==true k.Body=(g
 'Frame'{Name='ProgressBar',AutomaticSize=Enum.AutomaticSize.Y,
@@ -8159,9 +8173,9 @@ function(p)k.Title.Text=type(p)=='string'and p or''m()end,Text=function(p)k.
 Readout.Text=type(p)=='string'and p or''m()end,Subtitle=function(p)local q=type(
 p)=='string'and p or''k.Subtitle.Text=q k.Subtitle.Visible=q~=''end},k.Body)p.
 Type='ProgressBar'p.Theme=b.Theme p.Structures=k k.Body.Destroying:Connect(
-function()o(false)end)e.Apply(c,p)n()return p end end function a.V()local c=a.
-cache.V if not c then c={c=b()}a.cache.V=c end return c.c end end do local b=
-function()a.b()return function(b,c)local d,e,f=a.d(),a.c(),a.g()local g,h,i,j=d.
+function()o(false)end)e.Apply(c,p)n()return p end end function a.W()local c=a.
+cache.W if not c then c={c=b()}a.cache.W=c end return c.c end end do local b=
+function()a.b()return function(b,c)local d,e,f=a.e(),a.c(),a.h()local g,h,i,j=d.
 Create,(b.Structures and b.Structures.Body)or b.__container or b.__instance or b
 ,b.Theme.Metrics or{},{}c=c or{}c.Title=c.Title or'Are you sure?'c.Text=c.Text
 or''c.Confirm=c.Confirm or'Confirm'c.Cancel=c.Cancel or'Cancel'c.Destructive=c.
@@ -8232,9 +8246,9 @@ type(p)~='string'then return end j.CancelButton.Text=p end,Icon=function(p)j.
 Icon.Image=type(p)=='string'and p or''end},j.Body)p.Type='Confirm'p.Theme=b.
 Theme p.Structures=j p.Close=function()o(false)end e.Apply(c,p)if j.Icon.Image==
 ''then j.Icon.Image=c.Destructive and f.trash or f.questionmarkCircleFill end m(
-)return p end end function a.W()local c=a.cache.W if not c then c={c=b()}a.cache
-.W=c end return c.c end end do local b=function()a.b()return function(b,c)local
-d,e,f,g=a.d(),a.c(),a.g(),a.e()local h,i,j,k,l,m,n,o,p,q=d.Create,g.TweenService
+)return p end end function a.X()local c=a.cache.X if not c then c={c=b()}a.cache
+.X=c end return c.c end end do local b=function()a.b()return function(b,c)local
+d,e,f,g=a.e(),a.c(),a.h(),a.f()local h,i,j,k,l,m,n,o,p,q=d.Create,g.TweenService
 ,b.__container or b.__instance or b,b.Theme.Metrics or{},{},{},1,false,0,b.Theme
 .Controls.Selection c=c or{}c.Title=c.Title or'Starting'c.Steps=c.Steps or{}c.
 Patience=c.Patience or 3 c.Timeout=c.Timeout or 20 local r=function(r,s)return h
@@ -8319,10 +8333,10 @@ Create(B,z,{TextTransparency=1}):Play()end for A,B in m do i:Create(B.Instance,z
 ,{TextTransparency=1}):Play()end end)task.delay(A and 0.3 or 0,z)end e.Apply(c,y
 )if c.Timeout>0 then task.delay(c.Timeout,function()if not o then y.Close()end
 end)end if l.Icon.Image==''then l.Icon.Image=f.boltFill or''end return y end end
-function a.X()local c=a.cache.X if not c then c={c=b()}a.cache.X=c end return c.
-c end end do local b=function()a.b()return function(b,c)local d,e,f=a.d(),a.c(),
-a.g()local g,h,i,j,k=d.Create,b.__container or b.__instance or b,b.Theme.Metrics
-or{},a.j()(b),false c=c or{}c.Title=c.Title or'Paste your key'c.Text=c.Text or''
+function a.Y()local c=a.cache.Y if not c then c={c=b()}a.cache.Y=c end return c.
+c end end do local b=function()a.b()return function(b,c)local d,e,f=a.e(),a.c(),
+a.h()local g,h,i,j,k=d.Create,b.__container or b.__instance or b,b.Theme.Metrics
+or{},a.k()(b),false c=c or{}c.Title=c.Title or'Paste your key'c.Text=c.Text or''
 c.Placeholder=c.Placeholder or'Key'c.Confirm=c.Confirm or'Unlock'local l=b.Theme
 .Controls.Selection j.Gate=(g'Frame'{Name='KeyGate',BackgroundColor3=Color3.
 fromRGB(0,0,0),BackgroundTransparency=0.35,BorderSizePixel=0,Size=UDim2.
@@ -8407,9 +8421,9 @@ Visible=q~=''end,Error=function(p)m(p)end},j.Gate)n.Type='KeyGate'n.Theme=b.
 Theme n.Structures=j function n:Accept()j.Gate:Destroy()if c.Accepted then task.
 spawn(c.Accepted,n,j.Field.Text)end end function n:Close()j.Gate:Destroy()end j.
 Submit.MouseButton1Click:Connect(o)j.Field.FocusLost:Connect(function(p)if p
-then o()end end)e.Apply(c,n)return n end end function a.Y()local c=a.cache.Y if
-not c then c={c=b()}a.cache.Y=c end return c.c end end do local b=function()a.b(
-)return function(b,c)local d,e,f=a.d(),a.c(),a.g()local g,h,i,j,k,l,m=d.Create,b
+then o()end end)e.Apply(c,n)return n end end function a.Z()local c=a.cache.Z if
+not c then c={c=b()}a.cache.Z=c end return c.c end end do local b=function()a.b(
+)return function(b,c)local d,e,f=a.e(),a.c(),a.h()local g,h,i,j,k,l,m=d.Create,b
 .__container or b.__instance or b,b.Theme.Metrics or{},{},8,{},''c=c or{}c.
 Places=c.Places or{}c.Placeholder=c.Placeholder or'Where to'c.Search=c.Search==
 true c.Minimum=c.Minimum or 122 local n=b.Theme.Controls.Selection j.Body=(g
@@ -8493,9 +8507,9 @@ PlaceholderText=type(v)=='string'and v or''end,Search=function(v)c.Search=v==
 true j.Search.Visible=c.Search end,Places=function(v)if type(v)~='table'then
 return end c.Places=v s(v)end,Selected=function(v)c.Selected=v for w,x in l do
 p(x)end end},j.Body)v.Type='DestinationGrid'v.Theme=b.Theme v.Structures=j v.
-Refresh=function()s(c.Places)end e.Apply(c,v)return v end end function a.Z()
-local c=a.cache.Z if not c then c={c=b()}a.cache.Z=c end return c.c end end do
-local b=function()a.b()return function(b,c)local d,e=a.d(),a.c()local f,g,h,i,j,
+Refresh=function()s(c.Places)end e.Apply(c,v)return v end end function a._()
+local c=a.cache._ if not c then c={c=b()}a.cache._=c end return c.c end end do
+local b=function()a.b()return function(b,c)local d,e=a.e(),a.c()local f,g,h,i,j,
 k=d.Create,b.__container or b.__instance or b,b.Theme.Metrics or{},{},{},{}c=c
 or{}c.Pool=c.Pool or'points to spend'c.Value=c.Value or 0 c.Rows=c.Rows or{}c.
 Apply=c.Apply or'Apply'local l,m=b.Theme.Controls.Selection,function()local l=0
@@ -8591,11 +8605,11 @@ Apply=r p()end,Value=function(r)c.Value=tonumber(r)or 0 p()end,Rows=function(r)
 if type(r)~='table'then return end c.Rows=r q(r)end},i.Body)r.Type='PointBudget'
 r.Theme=b.Theme r.Structures=i i.Commit.MouseButton1Click:Connect(function()if
 m()<=0 then return end local s=table.clone(k)k={}p()if c.Committed then task.
-spawn(c.Committed,r,s)end end)e.Apply(c,r)return r end end function a._()local c
-=a.cache._ if not c then c={c=b()}a.cache._=c end return c.c end end do local b=
-function()a.b()return function(b,c)local d,e,f,g=a.d(),a.c(),a.a(),a.e()local h,
-i,j,k,l,m,n,o,p,q=d.Create,g.UserInputService,b.__container or b.__instance or b
-,b.Theme.Metrics or{},{},0.09,0.9,1 c=c or{}c.Value=c.Value or Color3.fromRGB(
+spawn(c.Committed,r,s)end end)e.Apply(c,r)return r end end function a.aa()local
+c=a.cache.aa if not c then c={c=b()}a.cache.aa=c end return c.c end end do local
+b=function()a.b()return function(b,c)local d,e,f,g=a.e(),a.c(),a.a(),a.f()local
+h,i,j,k,l,m,n,o,p,q=d.Create,g.UserInputService,b.__container or b.__instance or
+b,b.Theme.Metrics or{},{},0.09,0.9,1 c=c or{}c.Value=c.Value or Color3.fromRGB(
 255,163,26)c.Presets=c.Presets or{'FFA31A','F87171','FBBF24','4ADE80','38BDF8',
 'A78BFA','F5F5F7','6E7178'}l.Body=(h'TextButton'{Name='ColorPicker',
 AutoButtonColor=false,AutomaticSize=Enum.AutomaticSize.X,BorderSizePixel=0,Size=
@@ -8716,9 +8730,9 @@ setclipboard('#'..string.upper(c.Value:ToHex()))end end)local x=e.Wrap(c,{Value=
 function(x)if typeof(x)~='Color3'then return end s(x)end},l.Body)x.Type=
 'ColorPicker'x.Theme=b.Theme x.Structures=l x.Close=function()u(false)end l.Body
 .Destroying:Connect(function()l.Container:Destroy()end)e.Apply(c,x)s(c.Value)
-return x end end function a.aa()local c=a.cache.aa if not c then c={c=b()}a.
-cache.aa=c end return c.c end end do local b=function()a.b()return function(b,c)
-local d,e=a.d(),a.c()local f,g,h=d.Create,b.__container or b.__instance or b,{}c
+return x end end function a.ab()local c=a.cache.ab if not c then c={c=b()}a.
+cache.ab=c end return c.c end end do local b=function()a.b()return function(b,c)
+local d,e=a.e(),a.c()local f,g,h=d.Create,b.__container or b.__instance or b,{}c
 =c or{}c.Text=c.Text or'Idle'c.Active=c.Active==true h.Body=(f'Frame'{Name=
 'StatusLine',AutomaticSize=Enum.AutomaticSize.XY,BackgroundTransparency=1,
 BorderSizePixel=0,Size=UDim2.fromOffset(0,20),Parent=g,f'UIListLayout'{Name=
@@ -8740,7 +8754,7 @@ TextColor3=i h.Label.TextTransparency=c.Active and 0 or b.Theme.Text.Tertiary[2]
 1]:Connect(i)i()local j=e.Wrap(c,{Text=function(j)h.Label.Text=j end,Active=
 function(j)c.Active=j==true i()end,Color=function(j)c.Color=j i()end},h.Body)j.
 Type='StatusLine'j.Theme=b.Theme j.Structures=h e.Apply(c,j)return j end end
-function a.ab()local c=a.cache.ab if not c then c={c=b()}a.cache.ab=c end return
+function a.ac()local c=a.cache.ac if not c then c={c=b()}a.cache.ac=c end return
 c.c end end do local b=function()local b,c,d={},{},{}local e={Options=b,Rows=c,
 OnChanged=nil}function e.Watch(f)table.insert(d,f)end local f=function(f)f=f or{
 }local g={}for h,i in pairs(f)do g[h]=i end g.Title=nil g.Description=nil g.
@@ -8773,15 +8787,15 @@ q.Text or''return o:Label(p)end)return m,n end e.AddSection=function(j,k)k=k or{
 Icon=k.Icon,IconColor=k.IconColor}end e.AddParagraph=function(j,k)k=k or{}local
 l=j:PageSection{Title=k.Title,Subtitle=k.Content or k.Description or''}function
 l:SetTitle(m)l.Title=m return l end function l:SetDesc(m)l.Subtitle=m return l
-end return l end return e end function a.ac()local c=a.cache.ac if not c then c=
-{c=b()}a.cache.ac=c end return c.c end end do local b=function()local b,c,d,e=a.
-c(),a.f(),{Window=a.o(),Section=a.p(),Tab=a.r(),PageSection=a.t(),Form=a.u(),Row
-=a.v(),HStack=a.w(),VStack=a.x(),TitleStack=a.y(),Label=a.z(),Symbol=a.A(),
-Toggle=a.B(),TextField=a.C(),KeybindField=a.D(),Slider=a.E(),Button=a.F(),
-Stepper=a.G(),RadioButtonGroup=a.H(),PopUpButton=a.K(),PullDownButton=a.L(),Page
-=a.q(),Notification=a.O(),ImageSurface=a.Q(),StatTile=a.R(),StatGrid=a.S(),Badge
-=a.T(),Callout=a.U(),ProgressBar=a.V(),Confirm=a.W(),Splash=a.X(),KeyGate=a.Y(),
-DestinationGrid=a.Z(),PointBudget=a._(),ColorPicker=a.aa(),StatusLine=a.ab()},
+end return l end return e end function a.ad()local c=a.cache.ad if not c then c=
+{c=b()}a.cache.ad=c end return c.c end end do local b=function()local b,c,d,e=a.
+c(),a.g(),{Window=a.p(),Section=a.q(),Tab=a.s(),PageSection=a.u(),Form=a.v(),Row
+=a.w(),HStack=a.x(),VStack=a.y(),TitleStack=a.z(),Label=a.A(),Symbol=a.B(),
+Toggle=a.C(),TextField=a.D(),KeybindField=a.E(),Slider=a.F(),Button=a.G(),
+Stepper=a.H(),RadioButtonGroup=a.I(),PopUpButton=a.L(),PullDownButton=a.M(),Page
+=a.r(),Notification=a.P(),ImageSurface=a.R(),StatTile=a.S(),StatGrid=a.T(),Badge
+=a.U(),Callout=a.V(),ProgressBar=a.W(),Confirm=a.X(),Splash=a.Y(),KeyGate=a.Z(),
+DestinationGrid=a._(),PointBudget=a.aa(),ColorPicker=a.ab(),StatusLine=a.ac()},
 function(b)if debug and debug.traceback then return debug.traceback(b)end return
 tostring(b)end local f=function(f,g)return function(h,...)local i,j=table.pack(
 ...),c.FromContext(h)local k,l,m,n=j and j:_Begin(h,f,i[1]),xpcall(function()
@@ -8793,10 +8807,10 @@ Theme then m.Theme=h.Theme end end b.Apply(d,m)local o=n or(typeof(m)=='table'
 and pcall(function()return m.__instance end)and m.__instance)if o~=nil then
 table.insert(__SH.COMPINDEXES,o)if j then j:_Commit(k,m,o)end return m,o end if
 j then j:_Commit(k,m,nil)end return m end end for g,h in pairs(d)do d[g]=f(g,h)
-end function d.register(g,h)d[g]=f(g,h)end local g=a.ac()for h,i in pairs(g)do
-if type(i)=='function'then d[h]=i end end return d end function a.ad()local c=a.
-cache.ad if not c then c={c=b()}a.cache.ad=c end return c.c end end do local b=
-function()local b=a.d()local c=b.Value local d=function(d,e)local f=(typeof(d)==
+end function d.register(g,h)d[g]=f(g,h)end local g=a.ad()for h,i in pairs(g)do
+if type(i)=='function'then d[h]=i end end return d end function a.ae()local c=a.
+cache.ae if not c then c={c=b()}a.cache.ae=c end return c.c end end do local b=
+function()local b=a.e()local c=b.Value local d=function(d,e)local f=(typeof(d)==
 'Color3'and d)or(typeof(d)=='string'and Color3.fromHex(d))return{c(f),c(1-(e/100
 ))}end return{_id='Dark',Metrics={RowPadding=10,TitleSize=15,SubtitleVisible=
 true,Mono=false,Squared=false,Radius=6,ControlHeight=23,ControlTextSize=15,
@@ -8836,8 +8850,8 @@ Color3.fromRGB(255,255,255)),ColorSequenceKeypoint.new(1,Color3.fromRGB(190,190,
 190))})},StatTile={Surface=d('191C21',100),Border=d('23262C',100),Label=d(
 '5F646D',100),Delta=d('22C55E',100),Track=d('2F333A',100)},Badge={Background=d(
 '23262C',70),BackgroundActive=d('22C55E',15),Text=d('5F646D',100),TextActive=d(
-'22C55E',100)}}}end function a.ae()local c=a.cache.ae if not c then c={c=b()}a.
-cache.ae=c end return c.c end end do local b=function()local b=a.d()local c=b.
+'22C55E',100)}}}end function a.af()local c=a.cache.af if not c then c={c=b()}a.
+cache.af=c end return c.c end end do local b=function()local b=a.e()local c=b.
 Value local d=function(d,e)local f=(typeof(d)=='Color3'and d)or(typeof(d)==
 'string'and Color3.fromHex(d))return{c(f),c(1-(e/100))}end return{_id='Light',
 Metrics={RowPadding=10,TitleSize=15,SubtitleVisible=true,Mono=false,Squared=
@@ -8878,9 +8892,9 @@ Gradient=c(ColorSequence.new{ColorSequenceKeypoint.new(0,Color3.fromRGB(255,255,
 Surface=d('FFFFFF',100),Border=d('E9ECF3',100),Label=d('A3A9B6',100),Delta=d(
 '16A34A',100),Track=d('DBE0EA',100)},Badge={Background=d('E9ECF3',70),
 BackgroundActive=d('16A34A',15),Text=d('A3A9B6',100),TextActive=d('16A34A',100)}
-}}end function a.af()local c=a.cache.af if not c then c={c=b()}a.cache.af=c end
-return c.c end end do local b=function()return{Dark=a.ae(),Light=a.af()}end
-function a.ag()local c=a.cache.ag if not c then c={c=b()}a.cache.ag=c end return
+}}end function a.ag()local c=a.cache.ag if not c then c={c=b()}a.cache.ag=c end
+return c.c end end do local b=function()return{Dark=a.af(),Light=a.ag()}end
+function a.ah()local c=a.cache.ah if not c then c={c=b()}a.cache.ah=c end return
 c.c end end do local b=function()local b=function(b,c)return ColorSequence.new{
 ColorSequenceKeypoint.new(0,Color3.fromHex(b)),ColorSequenceKeypoint.new(1,
 Color3.fromHex(c))}end return{Blue={_id='Blue',Dark={SwitchAccent=Color3.fromHex
@@ -8937,9 +8951,9 @@ fromHex'#58585C',SelectionFocused=Color3.fromHex'#6E6E72',Toggle={SwitchOn=
 Color3.fromHex'#98989D'},Button={FillPrimary=b('#6E6E72','#404044')}},Light={
 SwitchAccent=Color3.fromHex'#8E8E93',Selection=Color3.fromHex'#4E4E52',
 SelectionFocused=Color3.fromHex'#626266',Toggle={SwitchOn=Color3.fromHex
-'#8E8E93'},Button={FillPrimary=b('#626266','#383838')}}}}end function a.ah()
-local c=a.cache.ah if not c then c={c=b()}a.cache.ah=c end return c.c end end do
-local b=function()local b,c=a.ac(),{}c.Options=b.Options c.FunctionTask={}c.
+'#8E8E93'},Button={FillPrimary=b('#626266','#383838')}}}}end function a.ai()
+local c=a.cache.ai if not c then c={c=b()}a.cache.ai=c end return c.c end end do
+local b=function()local b,c=a.ad(),{}c.Options=b.Options c.FunctionTask={}c.
 UnLoaded=false c.BreakLoop=false local d,e=function(d,e)for f,g in ipairs(d or{}
 )do if g==e then return f end end return nil end,function(d,e,f)local g,h={},
 setmetatable({Control=d,Flag=e},{__index=d})function h:OnChanged(i)table.insert(
@@ -8978,8 +8992,8 @@ Description=h.Description,Text=h.Default or h.Text or''})end function c:RunTasks
 ()for f,g in pairs(c.FunctionTask)do task.spawn(function()local h,i=pcall(g)if
 not h then warn('['..tostring(f)..'] stopped: '..tostring(i))end end)end end
 function c:StopTasks()c.BreakLoop=true c.UnLoaded=true end return c end function
-a.ai()local c=a.cache.ai if not c then c={c=b()}a.cache.ai=c end return c.c end
-end do local b=function()local b,c,d,e=a.ac(),{},{},{}c.Unloaded=false c.
+a.aj()local c=a.cache.aj if not c then c={c=b()}a.cache.aj=c end return c.c end
+end do local b=function()local b,c,d,e=a.ad(),{},{},{}c.Unloaded=false c.
 Tolerance=3 local f=function(f)e[f]=nil end local g=function(g)local h=d[g]if
 not h or e[g]then return end local i={}e[g]=i task.spawn(function()local j=0
 while e[g]==i and not c.Unloaded do local k,l=pcall(h.Work)if k then j=0 else j
@@ -8992,9 +9006,9 @@ function c.Register(h,i,j,k)k=k or{}d[h]={Interval=i or 0.5,Work=j,Fault=k.Fault
 function c.Stop(h)f(h)end function c.StopAll()c.Unloaded=true for h in pairs(e)
 do f(h)end end b.Watch(function(h,i)if not d[h]then return end if i==true then
 local j=b.Rows[h]if j then pcall(function()j.Fault=nil end)end g(h)else f(h)end
-end)return c end function a.aj()local c=a.cache.aj if not c then c={c=b()}a.
-cache.aj=c end return c.c end end do local b=function()local b,c,d,e,f,g,h,i,j,k
-=a.a(),a.b(),a.d(),a.c(),a.e(),a.f(),a.g(),a.ad(),a.ag(),a.ah()local l,m,n,o,p=d
+end)return c end function a.ak()local c=a.cache.ak if not c then c={c=b()}a.
+cache.ak=c end return c.c end end do local b=function()local b,c,d,e,f,g,h,i,j,k
+=a.a(),a.b(),a.e(),a.c(),a.f(),a.g(),a.h(),a.ae(),a.ah(),a.ai()local l,m,n,o,p=d
 .Create,f.TweenService,{Themes=j,Accents=k,Symbols=h,Creator=d,Binder=e,
 Components=i,AppRecorder=g},(TweenInfo.new(0.4,Enum.EasingStyle.Exponential,Enum
 .EasingDirection.Out))local function q(r,s)local t={}for u,v in pairs(r)do local
@@ -9065,13 +9079,13 @@ ZIndexBehavior=Enum.ZIndexBehavior.Sibling,DisplayOrder=2147483647,
 OnTopOfCoreBlur=true})local x=n.Component{Theme=v.Theme,Accent=v.Accent,Density=
 v.Density,Parent=w.__instance or w}local y=x[u](x,v)local z=y.Close y.Close=
 function(...)if z then z(...)end w:Destroy()end return y end end n.Splash=u
-'Splash'n.KeyGate=u'KeyGate'n.Options=a.ac().Options n.OnChanged=function(v)a.
-ac().OnChanged=v end local v=a.ai()n.Collection=v n.FunctionTask=v.FunctionTask
-n.Library=v local w=a.aj()n.Tasks=w n.Task=function(x,y,z,A)w.Register(x,y,z,A)
+'Splash'n.KeyGate=u'KeyGate'n.Options=a.ad().Options n.OnChanged=function(v)a.
+ad().OnChanged=v end local v=a.aj()n.Collection=v n.FunctionTask=v.FunctionTask
+n.Library=v local w=a.ak()n.Tasks=w n.Task=function(x,y,z,A)w.Register(x,y,z,A)
 end n.StopTasks=function()w.StopAll()end n.RegisterComponent=function(x,y)i.
 register(x,y)end n.AppDump=function(x,y)return g.DumpApp(x,y)end return n end
-function a.ak()local c=a.cache.ak if not c then c={c=b()}a.cache.ak=c end return
-c.c end end do local b=function()local b,c=a.e(),{}c.__index=c c.Data={}c.
+function a.al()local c=a.cache.al if not c then c={c=b()}a.cache.al=c end return
+c.c end end do local b=function()local b,c=a.f(),{}c.__index=c c.Data={}c.
 Templates={}c.App=nil c.Window=nil c.Cascade=nil local d={}local function e(f)if
 typeof(f)=='table'then local g={}for h,i in f do g[h]=e(i)end return g end
 return f end local f=function(f,g)if c.Templates[f]==nil then c.Templates[f]=g
@@ -9140,6 +9154,6 @@ end}n:Button{Label='Delete',State='Destructive',Pushed=function()self:Toast(`Del
 c.Data.Profile or'default'}"`,'error')end}local o=j:Form():Row{SearchIndex=
 'Auto Load'}o:Left():TitleStack{Title='Auto Load',Subtitle=
 'Applies the profile on launch.'}self:Toggle(o:Right(),'Auto Load')end return c
-end function a.al()local c=a.cache.al if not c then c={c=b()}a.cache.al=c end
-return c.c end end end __SH={COMPINDEXES={}}local b,c=a.ak(),a.al()b.SaveManager
+end function a.am()local c=a.cache.am if not c then c={c=b()}a.cache.am=c end
+return c.c end end end __SH={COMPINDEXES={}}local b,c=a.al(),a.am()b.SaveManager
 =c return b
