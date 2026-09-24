@@ -7001,21 +7001,24 @@ __instance or b,{}c=c or{}c.Padding=c.Padding or UDim.new(0,10)c.
 VerticalAlignment=c.VerticalAlignment or Enum.VerticalAlignment.Center c.
 HorizontalAlignment=c.HorizontalAlignment or Enum.HorizontalAlignment.Right h.
 Body=(e.Apply(c,f'Frame'{Name='HStack',BackgroundTransparency=1,AutomaticSize=
-Enum.AutomaticSize.XY,Parent=g,f'UIListLayout'{Name='UIListLayout',FillDirection
-=Enum.FillDirection.Horizontal,SortOrder=Enum.SortOrder.LayoutOrder,Wraps=true}}
-))h.Layout=(h.Body:FindFirstChild'UIListLayout')local i=e.Wrap(c,{Padding=
-function(i)h.Layout.Padding=i end,HorizontalAlignment=function(i)h.Layout.
-HorizontalAlignment=i end,VerticalAlignment=function(i)h.Layout.
-VerticalAlignment=i end},h.Body)i.Type='HStack'i.Theme=b.Theme i.Structures=h e.
-Apply(c,i)return i end end function a.w()local c=a.cache.w if not c then c={c=b(
-)}a.cache.w=c end return c.c end end do local b=function()a.b()return function(b
-,c)local d,e=a.d(),a.c()local f,g,h=d.Create,b.__container or b.__instance or b,
-{}c=c or{}c.Padding=c.Padding or UDim.new(0,10)c.VerticalAlignment=c.
-VerticalAlignment or Enum.VerticalAlignment.Center c.HorizontalAlignment=c.
-HorizontalAlignment or Enum.HorizontalAlignment.Right h.Body=(e.Apply(c,f'Frame'
-{Name='VStack',BackgroundTransparency=1,AutomaticSize=Enum.AutomaticSize.XY,
-Parent=g,f'UIListLayout'{Name='UIListLayout',FillDirection=Enum.FillDirection.
-Vertical,SortOrder=Enum.SortOrder.LayoutOrder,Wraps=true}}))h.Layout=(h.Body:
+Enum.AutomaticSize.XY,Size=UDim2.fromOffset(0,0),Parent=g,f'UIListLayout'{Name=
+'UIListLayout',FillDirection=Enum.FillDirection.Horizontal,HorizontalAlignment=c
+.HorizontalAlignment,Padding=c.Padding,SortOrder=Enum.SortOrder.LayoutOrder,
+VerticalAlignment=c.VerticalAlignment,Wraps=true}}))h.Layout=(h.Body:
+FindFirstChild'UIListLayout')local i=e.Wrap(c,{Padding=function(i)h.Layout.
+Padding=i end,HorizontalAlignment=function(i)h.Layout.HorizontalAlignment=i end,
+VerticalAlignment=function(i)h.Layout.VerticalAlignment=i end},h.Body)i.Type=
+'HStack'i.Theme=b.Theme i.Structures=h e.Apply(c,i)return i end end function a.w
+()local c=a.cache.w if not c then c={c=b()}a.cache.w=c end return c.c end end do
+local b=function()a.b()return function(b,c)local d,e=a.d(),a.c()local f,g,h=d.
+Create,b.__container or b.__instance or b,{}c=c or{}c.Padding=c.Padding or UDim.
+new(0,10)c.VerticalAlignment=c.VerticalAlignment or Enum.VerticalAlignment.
+Center c.HorizontalAlignment=c.HorizontalAlignment or Enum.HorizontalAlignment.
+Right h.Body=(e.Apply(c,f'Frame'{Name='VStack',BackgroundTransparency=1,
+AutomaticSize=Enum.AutomaticSize.XY,Size=UDim2.fromOffset(0,0),Parent=g,f
+'UIListLayout'{Name='UIListLayout',FillDirection=Enum.FillDirection.Vertical,
+HorizontalAlignment=c.HorizontalAlignment,Padding=c.Padding,SortOrder=Enum.
+SortOrder.LayoutOrder,VerticalAlignment=c.VerticalAlignment}}))h.Layout=(h.Body:
 FindFirstChild'UIListLayout')local i=e.Wrap(c,{Padding=function(i)h.Layout.
 Padding=i end,HorizontalAlignment=function(i)h.Layout.HorizontalAlignment=i end,
 VerticalAlignment=function(i)h.Layout.VerticalAlignment=i end},h.Body)i.Type=
