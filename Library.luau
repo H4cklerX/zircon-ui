@@ -6996,83 +6996,85 @@ then q(r,s)end end end},i.Body)n.Type='Row'n.Theme=b.Theme n.Structures=i n.Left
 Right=function()local o=table.clone(n)o.__container=i.RightAccessories return o
 end e.Apply(c,n)return n end end function a.v()local c=a.cache.v if not c then c
 ={c=b()}a.cache.v=c end return c.c end end do local b=function()a.b()return
-function(b,c)local d,e=a.d(),a.c()local f,g,h=d.Create,b.__container or b.
-__instance or b,{}c=c or{}c.Padding=c.Padding or UDim.new(0,10)c.
-VerticalAlignment=c.VerticalAlignment or Enum.VerticalAlignment.Center c.
-HorizontalAlignment=c.HorizontalAlignment or Enum.HorizontalAlignment.Right h.
-Body=(e.Apply(c,f'Frame'{Name='HStack',BackgroundTransparency=1,AutomaticSize=
-Enum.AutomaticSize.XY,Size=UDim2.fromOffset(0,0),Parent=g,f'UIListLayout'{Name=
-'UIListLayout',FillDirection=Enum.FillDirection.Horizontal,HorizontalAlignment=c
-.HorizontalAlignment,Padding=c.Padding,SortOrder=Enum.SortOrder.LayoutOrder,
+function(b,c)local d,e=a.d(),a.c()local f,g,h,i=d.Create,b.__container or b.
+__instance or b,{},function(f)if type(f)=='number'then return UDim.new(0,f)end
+return f or UDim.new(0,10)end c=c or{}c.Padding=i(c.Padding)c.VerticalAlignment=
+c.VerticalAlignment or Enum.VerticalAlignment.Center c.HorizontalAlignment=c.
+HorizontalAlignment or Enum.HorizontalAlignment.Right h.Body=(e.Apply(c,f'Frame'
+{Name='HStack',BackgroundTransparency=1,AutomaticSize=Enum.AutomaticSize.XY,Size
+=UDim2.fromOffset(0,0),Parent=g,f'UIListLayout'{Name='UIListLayout',
+FillDirection=Enum.FillDirection.Horizontal,HorizontalAlignment=c.
+HorizontalAlignment,Padding=c.Padding,SortOrder=Enum.SortOrder.LayoutOrder,
 VerticalAlignment=c.VerticalAlignment,Wraps=true}}))h.Layout=(h.Body:
-FindFirstChild'UIListLayout')local i=e.Wrap(c,{Padding=function(i)h.Layout.
-Padding=i end,HorizontalAlignment=function(i)h.Layout.HorizontalAlignment=i end,
-VerticalAlignment=function(i)h.Layout.VerticalAlignment=i end},h.Body)i.Type=
-'HStack'i.Theme=b.Theme i.Structures=h e.Apply(c,i)return i end end function a.w
-()local c=a.cache.w if not c then c={c=b()}a.cache.w=c end return c.c end end do
-local b=function()a.b()return function(b,c)local d,e=a.d(),a.c()local f,g,h=d.
-Create,b.__container or b.__instance or b,{}c=c or{}c.Padding=c.Padding or UDim.
-new(0,10)c.VerticalAlignment=c.VerticalAlignment or Enum.VerticalAlignment.
+FindFirstChild'UIListLayout')local j=e.Wrap(c,{Padding=function(j)h.Layout.
+Padding=i(j)end,HorizontalAlignment=function(j)h.Layout.HorizontalAlignment=j
+end,VerticalAlignment=function(j)h.Layout.VerticalAlignment=j end},h.Body)j.Type
+='HStack'j.Theme=b.Theme j.Structures=h e.Apply(c,j)return j end end function a.
+w()local c=a.cache.w if not c then c={c=b()}a.cache.w=c end return c.c end end
+do local b=function()a.b()return function(b,c)local d,e=a.d(),a.c()local f,g,h,i
+=d.Create,b.__container or b.__instance or b,{},function(f)if type(f)=='number'
+then return UDim.new(0,f)end return f or UDim.new(0,10)end c=c or{}c.Padding=i(c
+.Padding)c.VerticalAlignment=c.VerticalAlignment or Enum.VerticalAlignment.
 Center c.HorizontalAlignment=c.HorizontalAlignment or Enum.HorizontalAlignment.
 Right h.Body=(e.Apply(c,f'Frame'{Name='VStack',BackgroundTransparency=1,
 AutomaticSize=Enum.AutomaticSize.XY,Size=UDim2.fromOffset(0,0),Parent=g,f
 'UIListLayout'{Name='UIListLayout',FillDirection=Enum.FillDirection.Vertical,
 HorizontalAlignment=c.HorizontalAlignment,Padding=c.Padding,SortOrder=Enum.
 SortOrder.LayoutOrder,VerticalAlignment=c.VerticalAlignment}}))h.Layout=(h.Body:
-FindFirstChild'UIListLayout')local i=e.Wrap(c,{Padding=function(i)h.Layout.
-Padding=i end,HorizontalAlignment=function(i)h.Layout.HorizontalAlignment=i end,
-VerticalAlignment=function(i)h.Layout.VerticalAlignment=i end},h.Body)i.Type=
-'VStack'i.Theme=b.Theme i.Structures=h e.Apply(c,i)return i end end function a.x
-()local c=a.cache.x if not c then c={c=b()}a.cache.x=c end return c.c end end do
-local b=function()a.b()return function(b,c)local d,e=a.c(),a.s()local f,g=e(b),b
-.Theme.Metrics or{SubtitleVisible=true}c=c or{}c.Title=c.Title or'Title'f.Body.
-Parent=b.__container or b.__instance or b local h=d.Wrap(c,{Title=function(h)f.
-Title.Text=h end,Subtitle=function(h)f.Subtitle.Visible=g.SubtitleVisible~=false
-f.Subtitle.Text=h end},f.Body)h.Type='TitleStack'h.Theme=b.Theme h.Structures=f
-d.Apply(c,h)return h end end function a.y()local c=a.cache.y if not c then c={c=
-b()}a.cache.y=c end return c.c end end do local b=function()a.b()return function
-(b,c)local d,e=a.d(),a.c()local f,g,h=d.Create,b.__container or b.__instance or
-b,{}c=c or{}c.Text=c.Text or'Label'h.Body=(f'TextLabel'{Name='Label',
-AutomaticSize=Enum.AutomaticSize.XY,BackgroundColor3=Color3.fromRGB(255,255,255)
-,BackgroundTransparency=1,BorderColor3=Color3.fromRGB(0,0,0),BorderSizePixel=0,
-FontFace=Font.new'rbxassetid://12187365364',RichText=true,TextSize=15,
-TextTruncate=Enum.TextTruncate.AtEnd,TextWrapped=true,Parent=g,__dynamicKeys={
-TextColor3=b.Theme.Text.Secondary[1],TextTransparency=b.Theme.Text.Secondary[2]}
-})local i=e.Wrap(c,{},h.Body)i.Type='Label'i.Theme=b.Theme i.Structures=h e.
-Apply(c,i)return i end end function a.z()local c=a.cache.z if not c then c={c=b(
-)}a.cache.z=c end return c.c end end do local b=function()a.b()return function(b
-,c)local d,e=a.d(),a.c()local f,g,h=d.Create,b.__container or b.__instance or b,
-{}c=c or{}c.Style=c.Style or'Primary'c.Size=c.Size or UDim2.fromOffset(20,20)h.
-Body=(f'ImageLabel'{Name='Image',AutomaticSize=Enum.AutomaticSize.XY,
+FindFirstChild'UIListLayout')local j=e.Wrap(c,{Padding=function(j)h.Layout.
+Padding=i(j)end,HorizontalAlignment=function(j)h.Layout.HorizontalAlignment=j
+end,VerticalAlignment=function(j)h.Layout.VerticalAlignment=j end},h.Body)j.Type
+='VStack'j.Theme=b.Theme j.Structures=h e.Apply(c,j)return j end end function a.
+x()local c=a.cache.x if not c then c={c=b()}a.cache.x=c end return c.c end end
+do local b=function()a.b()return function(b,c)local d,e=a.c(),a.s()local f,g=e(b
+),b.Theme.Metrics or{SubtitleVisible=true}c=c or{}c.Title=c.Title or'Title'f.
+Body.Parent=b.__container or b.__instance or b local h=d.Wrap(c,{Title=function(
+h)f.Title.Text=h end,Subtitle=function(h)f.Subtitle.Visible=g.SubtitleVisible~=
+false f.Subtitle.Text=h end},f.Body)h.Type='TitleStack'h.Theme=b.Theme h.
+Structures=f d.Apply(c,h)return h end end function a.y()local c=a.cache.y if not
+c then c={c=b()}a.cache.y=c end return c.c end end do local b=function()a.b()
+return function(b,c)local d,e=a.d(),a.c()local f,g,h=d.Create,b.__container or b
+.__instance or b,{}c=c or{}c.Text=c.Text or'Label'h.Body=(f'TextLabel'{Name=
+'Label',AutomaticSize=Enum.AutomaticSize.XY,BackgroundColor3=Color3.fromRGB(255,
+255,255),BackgroundTransparency=1,BorderColor3=Color3.fromRGB(0,0,0),
+BorderSizePixel=0,FontFace=Font.new'rbxassetid://12187365364',RichText=true,
+TextSize=15,TextTruncate=Enum.TextTruncate.AtEnd,TextWrapped=true,Parent=g,
+__dynamicKeys={TextColor3=b.Theme.Text.Secondary[1],TextTransparency=b.Theme.
+Text.Secondary[2]}})local i=e.Wrap(c,{},h.Body)i.Type='Label'i.Theme=b.Theme i.
+Structures=h e.Apply(c,i)return i end end function a.z()local c=a.cache.z if not
+c then c={c=b()}a.cache.z=c end return c.c end end do local b=function()a.b()
+return function(b,c)local d,e=a.d(),a.c()local f,g,h=d.Create,b.__container or b
+.__instance or b,{}c=c or{}c.Style=c.Style or'Primary'c.Size=c.Size or UDim2.
+fromOffset(20,20)h.Body=(f'ImageLabel'{Name='Image',AutomaticSize=Enum.
+AutomaticSize.XY,BackgroundColor3=Color3.fromRGB(255,255,255),
+BackgroundTransparency=1,BorderColor3=Color3.fromRGB(0,0,0),BorderSizePixel=0,
+Parent=g,__dynamicKeys={ImageColor3=b.Theme.Text.Primary[1],ImageTransparency=b.
+Theme.Text.Primary[2]},__contextKeys={ImageColor3=function()return c.Style==
+'Primary'and b.Theme.Text.Primary[1].Value or b.Theme.Text.Secondary[1].Value
+end,ImageTransparency=function()return c.Style=='Primary'and b.Theme.Text.
+Primary[2].Value or b.Theme.Text.Secondary[2].Value end}})local i=e.Wrap(c,{
+Style=function(i)if i=='Primary'then h.Body.ImageColor3=b.Theme.Text.Primary[1].
+Value h.Body.ImageTransparency=b.Theme.Text.Primary[2].Value else h.Body.
+ImageColor3=b.Theme.Text.Secondary[1].Value h.Body.ImageTransparency=b.Theme.
+Text.Secondary[2].Value end end},h.Body)i.Type='Symbol'i.Theme=b.Theme i.
+Structures=h e.Apply(c,i)return i end end function a.A()local c=a.cache.A if not
+c then c={c=b()}a.cache.A=c end return c.c end end do local b=function()a.b()
+return function(b,c)local d,e,f=a.d(),a.c(),a.e()local g,h,i,j,k=d.Create,f.
+TweenService,b.__container or b.__instance or b,b.Theme.Controls.Toggle,{}c=c or
+{}c.Value=c.Value==true k.Body=(e.Apply(c,g'Frame'{Name='Toggle',
 BackgroundColor3=Color3.fromRGB(255,255,255),BackgroundTransparency=1,
-BorderColor3=Color3.fromRGB(0,0,0),BorderSizePixel=0,Parent=g,__dynamicKeys={
-ImageColor3=b.Theme.Text.Primary[1],ImageTransparency=b.Theme.Text.Primary[2]},
-__contextKeys={ImageColor3=function()return c.Style=='Primary'and b.Theme.Text.
-Primary[1].Value or b.Theme.Text.Secondary[1].Value end,ImageTransparency=
-function()return c.Style=='Primary'and b.Theme.Text.Primary[2].Value or b.Theme.
-Text.Secondary[2].Value end}})local i=e.Wrap(c,{Style=function(i)if i=='Primary'
-then h.Body.ImageColor3=b.Theme.Text.Primary[1].Value h.Body.ImageTransparency=b
-.Theme.Text.Primary[2].Value else h.Body.ImageColor3=b.Theme.Text.Secondary[1].
-Value h.Body.ImageTransparency=b.Theme.Text.Secondary[2].Value end end},h.Body)i
-.Type='Symbol'i.Theme=b.Theme i.Structures=h e.Apply(c,i)return i end end
-function a.A()local c=a.cache.A if not c then c={c=b()}a.cache.A=c end return c.
-c end end do local b=function()a.b()return function(b,c)local d,e,f=a.d(),a.c(),
-a.e()local g,h,i,j,k=d.Create,f.TweenService,b.__container or b.__instance or b,
-b.Theme.Controls.Toggle,{}c=c or{}c.Value=c.Value==true k.Body=(e.Apply(c,g
-'Frame'{Name='Toggle',BackgroundColor3=Color3.fromRGB(255,255,255),
+BorderColor3=Color3.fromRGB(0,0,0),BorderSizePixel=0,Size=UDim2.fromOffset(28,16
+),Parent=i,g'ImageButton'{Name='Switch',AutoButtonColor=false,BackgroundColor3=
+Color3.fromRGB(255,255,255),BackgroundTransparency=1,BorderColor3=Color3.
+fromRGB(0,0,0),BorderSizePixel=0,Image='rbxassetid://104426531889908',
+ImageColor3=Color3.fromRGB(0,0,0),ImageTransparency=0.91,Size=UDim2.fromOffset(
+28,16),__dynamicKeys={ImageColor3=j.SwitchOff[1],ImageTransparency=j.SwitchOff[2
+]},__contextKeys={ImageColor3=function()return c.Value and j.SwitchOn[1].Value
+or j.SwitchOff[1].Value end,ImageTransparency=function()return c.Value and j.
+SwitchOn[2].Value or j.SwitchOff[2].Value end},g'ImageLabel'{Name='Knob',
+AnchorPoint=Vector2.new(0,0.5),BackgroundColor3=Color3.fromRGB(255,255,255),
 BackgroundTransparency=1,BorderColor3=Color3.fromRGB(0,0,0),BorderSizePixel=0,
-Size=UDim2.fromOffset(28,16),Parent=i,g'ImageButton'{Name='Switch',
-AutoButtonColor=false,BackgroundColor3=Color3.fromRGB(255,255,255),
-BackgroundTransparency=1,BorderColor3=Color3.fromRGB(0,0,0),BorderSizePixel=0,
-Image='rbxassetid://104426531889908',ImageColor3=Color3.fromRGB(0,0,0),
-ImageTransparency=0.91,Size=UDim2.fromOffset(28,16),__dynamicKeys={ImageColor3=j
-.SwitchOff[1],ImageTransparency=j.SwitchOff[2]},__contextKeys={ImageColor3=
-function()return c.Value and j.SwitchOn[1].Value or j.SwitchOff[1].Value end,
-ImageTransparency=function()return c.Value and j.SwitchOn[2].Value or j.
-SwitchOff[2].Value end},g'ImageLabel'{Name='Knob',AnchorPoint=Vector2.new(0,0.5)
-,BackgroundColor3=Color3.fromRGB(255,255,255),BackgroundTransparency=1,
-BorderColor3=Color3.fromRGB(0,0,0),BorderSizePixel=0,Image=
-'rbxassetid://99107881432922',Position=UDim2.new(0,1,0.5,0),Size=UDim2.
+Image='rbxassetid://99107881432922',Position=UDim2.new(0,1,0.5,0),Size=UDim2.
 fromOffset(14,14),__dynamicKeys={ImageColor3=j.Knob[1],ImageTransparency=j.Knob[
 2]},g'ImageLabel'{Name='Effects',AnchorPoint=Vector2.new(0.5,0.5),
 BackgroundColor3=Color3.fromRGB(255,255,255),BackgroundTransparency=1,
