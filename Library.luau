@@ -7829,7 +7829,7 @@ Text.Primary[2].Value,TextWrapped=true,RichText=true,TextXAlignment=Enum.
 TextXAlignment.Left,__dynamicKeys={TextColor3=b.Theme.Text.Primary[1],
 TextTransparency=b.Theme.Text.Primary[2]},__contextKeys={TextTransparency=
 function()return d.Age>=(e-1)and 1 or b.Theme.Text.Primary[2].Value end}}},g
-'UIListLayout'{Name='UIListLayout',Padding=UDim.new(0,2),SortOrder=Enum.
+'UIListLayout'{Name='UIListLayout',Padding=UDim.new(0,3),SortOrder=Enum.
 SortOrder.LayoutOrder},g'TextLabel'{Name='Subtitle',AutomaticSize=Enum.
 AutomaticSize.Y,BackgroundColor3=Color3.fromRGB(255,255,255),
 BackgroundTransparency=1,BorderColor3=Color3.fromRGB(0,0,0),BorderSizePixel=0,
@@ -7840,15 +7840,15 @@ Text.Secondary[2].Value,TextWrapped=true,TextXAlignment=Enum.TextXAlignment.Left
 ,Visible=c.Subtitle~='',__dynamicKeys={TextColor3=b.Theme.Text.Secondary[1],
 TextTransparency=b.Theme.Text.Secondary[2]},__contextKeys={TextTransparency=
 function()return d.Age>=(e-1)and 1 or b.Theme.Text.Secondary[2].Value end}},g
-'UIPadding'{Name='UIPadding',PaddingBottom=UDim.new(0,12),PaddingLeft=UDim.new(0
-,12),PaddingRight=UDim.new(0,40)}},g'Frame'{Name='Topbar',AutomaticSize=Enum.
-AutomaticSize.Y,BackgroundColor3=Color3.fromRGB(255,255,255),
-BackgroundTransparency=1,BorderColor3=Color3.fromRGB(0,0,0),BorderSizePixel=0,
-Size=UDim2.fromScale(1,0),Visible=(c.App~=nil)or(c.AppIcon~=nil),g'UIListLayout'
-{Name='UIListLayout',FillDirection=Enum.FillDirection.Horizontal,Padding=UDim.
-new(0,5),SortOrder=Enum.SortOrder.LayoutOrder,VerticalAlignment=Enum.
-VerticalAlignment.Center},g'TextLabel'{Name='App',AutomaticSize=Enum.
-AutomaticSize.X,BackgroundColor3=Color3.fromRGB(255,255,255),
+'UIPadding'{Name='UIPadding',PaddingBottom=UDim.new(0,16),PaddingLeft=UDim.new(0
+,12),PaddingRight=UDim.new(0,40),PaddingTop=UDim.new(0,10)}},g'Frame'{Name=
+'Topbar',AutomaticSize=Enum.AutomaticSize.Y,BackgroundColor3=Color3.fromRGB(255,
+255,255),BackgroundTransparency=1,BorderColor3=Color3.fromRGB(0,0,0),
+BorderSizePixel=0,Size=UDim2.fromScale(1,0),Visible=(c.App~=nil)or(c.AppIcon~=
+nil),g'UIListLayout'{Name='UIListLayout',FillDirection=Enum.FillDirection.
+Horizontal,Padding=UDim.new(0,5),SortOrder=Enum.SortOrder.LayoutOrder,
+VerticalAlignment=Enum.VerticalAlignment.Center},g'TextLabel'{Name='App',
+AutomaticSize=Enum.AutomaticSize.X,BackgroundColor3=Color3.fromRGB(255,255,255),
 BackgroundTransparency=1,BorderColor3=Color3.fromRGB(0,0,0),BorderSizePixel=0,
 FontFace=Font.new('rbxassetid://12187365364',Enum.FontWeight.Medium,Enum.
 FontStyle.Normal),LayoutOrder=1,LineHeight=0,Size=UDim2.fromOffset(0,14),Text=c.
